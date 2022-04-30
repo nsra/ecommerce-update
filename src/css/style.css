@@ -968,6 +968,13 @@ MEDIA QUERY
 
 }
 
+@media (min-width: 1200px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 1140px!important;
+    }
+}
+
+
 @media (max-width: 991px) and (min-width: 768px) {
 	.custom-thumbnail img {
 		height: 200px;
@@ -1045,3 +1052,4 @@ MEDIA QUERY
 	}
     
 }
+

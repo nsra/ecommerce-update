@@ -13,5 +13,7 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 })
 
 $(function() {
-    
+    $('.add-to-cart-btn').on( "click",function() {
+        alert('أضيف المُنتج إلى عربة الشراء');
+    });
 })
