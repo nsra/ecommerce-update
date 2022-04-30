@@ -217,7 +217,6 @@ body {
 }
 
 .custom-btn-primary2 {
-    color: white;
     background-color: #F8AD47;
     border-color: #F8AD47;
 }
@@ -789,6 +788,7 @@ SEARCH PAGE
     display: inline-block;
     text-align: center;
     transition: all 0.3s ease;
+    text-decoration: none;
 }
 
 .custom-pagination li.active a {
@@ -831,7 +831,7 @@ CONTACT PAGE
 }
 
 #contact-options .heading-with-border-bottom {
-    margin-bottom: 30px;
+    margin-bottom: 22px;
 }
 
 #contact-info {
