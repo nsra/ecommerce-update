@@ -208,14 +208,12 @@ body {
     margin-top: 18px;
 }
 
-#carousel-featured .product-details .custom-btn-primary {
-    color: #F8AD47;
-    border-color: #F8AD47;
+.custom-btn-primary {
+    color: #F8AD47!important;
+    border-color: #F8AD47!important;
     background-color: transparent;
-    padding: 9px 25px;
     margin-top: 15px;
-    font-size: 18px;
-	border-radius: 2px;
+	border-radius: 3px;
 }
 
 #carousel-featured .product-details .sale.large span{
@@ -226,11 +224,7 @@ body {
 #carousel-featured .carousel-control-next {
 	color: #868686;
 	font-size: 20px;
-}
-
-.carousel-row>.col-12{
-    padding-right: 0px;
-    padding-left: 0px;
+    cursor: pointer;
 }
 
 #store-features{
@@ -328,13 +322,20 @@ h3.custom-heading {
     position: static;
 }
 
-.carousel-indicators [data-bs-target] {
+.custom-carousel-indicators-primary [data-bs-target] {
     opacity: 1!important;
     height: 70px;
     width: 70px;
     border: 2px solid #DDDDDB;
     background-color: #fff;
     margin-right: 0px!important;
+}
+
+.custom-carousel-indicators [data-bs-target] {
+    height: 13px;
+    width: 13px;
+    margin: 2px;
+    background-color: #dbdbdb;
 }
 
 .custom-carousel-indicators-primary{
