@@ -227,13 +227,13 @@ body {
 	right: 41%;
 }
 
-.custom-carousel-indicators-primary img{
+/* .custom-carousel-indicators-primary img{
     height: 75px;
     width: 75px;
     border: 2px solid #DDDDDB;
     background-color: #fff;
     margin-right: 2px;
-}
+} */
 
 .custom-carousel-indicators-primary img.active {
 	border-color: #F8AD47;
@@ -343,6 +343,15 @@ h3.custom-heading {
 
 #carousel-most-sold .carousel-indicators{
     position: static;
+}
+
+.carousel-indicators [data-bs-target] {
+    opacity: 1!important;
+    height: 70px;
+    width: 70px;
+    border: 2px solid #DDDDDB;
+    background-color: #fff;
+    margin-right: 0px!important;
 }
 
 .custom-carousel-indicators>li{
