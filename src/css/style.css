@@ -222,23 +222,6 @@ body {
     font-size: 14px;
 }
 
-.custom-carousel-indicators-primary{
-    top: 235px;
-	right: 41%;
-}
-
-/* .custom-carousel-indicators-primary img{
-    height: 75px;
-    width: 75px;
-    border: 2px solid #DDDDDB;
-    background-color: #fff;
-    margin-right: 2px;
-} */
-
-.custom-carousel-indicators-primary img.active {
-	border-color: #F8AD47;
-}
-
 #carousel-featured .carousel-control-prev, 
 #carousel-featured .carousel-control-next {
 	color: #868686;
@@ -352,6 +335,15 @@ h3.custom-heading {
     border: 2px solid #DDDDDB;
     background-color: #fff;
     margin-right: 0px!important;
+}
+
+.custom-carousel-indicators-primary{
+    top: 235px;
+	right: 41%;
+}
+
+.custom-carousel-indicators-primary img.active {
+	border-color: #F8AD47;
 }
 
 .custom-carousel-indicators>li{
