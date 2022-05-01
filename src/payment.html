@@ -116,23 +116,23 @@
                 <div class="col-lg-6">
                 <h3 class="custom-heading">بياناتك الشخصية</h3>
                 <div class="row" >
-                    <div class="col-md-6">
+                    <div class="col-md-6 mb-3">
                         <input type="text" class="form-control custom-form-control custom-input-details"
                             placeholder="الاسم الأول" name="first_name" required>
                     </div>
-                    <div class="col-md-6 ">
+                    <div class="col-md-6 mb-3">
                         <input type="text" class="form-control custom-form-control custom-input-details" 
                                 placeholder="الاسم الأخير" name="last_name" required>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 mb-3">
                         <input type="email" class="form-control custom-form-control custom-input-details" 
                             placeholder="البريد الإلكتروني" name="email" required>
                     </div>
-                    <div class="col-md-6 ">
+                    <div class="col-md-6 mb-3">
                         <input type="text" class="form-control custom-form-control custom-input-details" 
                             placeholder="المنطقة" name="area" required>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 mb-3">
                     <select class="form-control custom-form-control custom-input-details" name="country" required>
                         <option disabled selected value="">اختر الدولة</option>
                         <option value="sa">السعودية</option>
@@ -141,12 +141,12 @@
                         <option value="sy">سوريا</option>
                     </select>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 mb-3">
                     <select class="form-control custom-form-control custom-input-details" name="city" required>
                         <option disabled selected value="">اختر المدينة</option>
                     </select>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 mb-3">
                         <input class="form-control custom-form-control custom-input-details" type="text" placeholder="رقم الموبايل" name="phone"
                         required>
                     </div>
@@ -172,7 +172,7 @@
                         الدفع بالبطاقة الائتمانية
                     </label>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 mb-3">
                     <label class="font-weight-bold">
                         <input type="radio" name="payment_method" value="on_delivery"> 
                         الدفع عند الاستلام
@@ -180,20 +180,20 @@
                     </div>
                     <!--بيانات بطاقة الائتمان-->
                     <div class="row" id="credit-card-info">
-                    <div class="col-md-6">
+                    <div class="col-md-6 mb-3">
                         <input class="form-control custom-form-control custom-input-details" 
                             type="text" name="credit_card_number" placeholder="رقم البطاقة" required>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 mb-3">
                         <input name="credit_card_expiration_month" class="form-control custom-form-control custom-input-details" placeholder="شهر الانتهاء"
                             type="number" min="1" max="12" required>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 mb-3">
                         <input class="form-control custom-form-control custom-input-details" 
                             type="number" min="2018" max="2030" placeholder="سنة الانتهاء"
                             name="credit_card_expiration_year" required>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 mb-3">
                         <input class="form-control custom-form-control custom-input-details" 
                             type="number" name="credit_card_cvv" placeholder="CVV" required>
                     </div>
@@ -204,8 +204,8 @@
                 <!--نهاية بيانات الدفع-->
 
                 <!--قسم عربة الشراء-->
-                <div class="">
-                <h3 class="custom-heading table-title">طلبك</h3>
+                <div class="col-10">
+                    <h3 class="custom-heading table-title">طلبك</h3>
                     <table class="custom-table">
                         <thead>
                             <tr>
@@ -219,11 +219,9 @@
                         <tbody>
                             <tr data-product-info data-product-price="400">
                                 <td>
-                                    <div class="media custom-media">
-                                        <div class="media-right d-none d-md-block">
-                                            <img src="images/lacoste_1.jpg" alt="تي شيرت رجالي من لاكوست" class="media-object">
-                                        </div>
-                                        <div class="media-body">
+                                    <div class="custom-media d-flex">
+                                        <img src="images/lacoste_1.jpg" alt="تي شيرت رجالي من لاكوست" class="d-none d-md-block">
+                                        <div>
                                             <h4>تي شيرت رجالي من لاكوست</h4>
                                             <div class="custom-text-muted">
                                                 ملابس رجالي
@@ -236,7 +234,7 @@
                                 </td>
                                 <td>
                                     <input name="product1" type="hidden" value="تي شيرت رجالي من لاكوست">
-                                    <select name="quantity1" class="form-control custom-form-control select-inline quantity" data-product-quantity>
+                                    <select name="quantity1" class="form-control custom-form-control  quantity" data-product-quantity>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
                                         <option value="3" selected>3</option>
@@ -246,19 +244,17 @@
                                     1200$
                                 </td>
                                 <td>
-                                    <button class="btn btn-danger  custom-btn-danger" data-remove-from-cart>
+                                    <button class="btn btn-danger custom-btn custom-btn-danger" data-remove-from-cart>
                                         <span class="d-none d-md-block">حذف</span>
-                                        <i class="fas fa-trash-alt d-block d-md-none"></i>
+                                        <i class="far fa-trash-alt d-block d-md-none"></i>
                                     </button>
                                 </td>
                             </tr>
                             <tr data-product-info data-product-price="300">
                                 <td>
-                                    <div class="media custom-media">
-                                        <div class="media-right d-none d-md-block">
-                                            <img src="images/tshirt.jpg" alt="تي شيرت أديداس" class="media-object">
-                                        </div>
-                                        <div class="media-body">
+                                    <div class="custom-media d-flex">
+                                        <img src="images/tshirt.jpg" alt="تي شيرت أديداس" class="d-none d-md-block">
+                                        <div>
                                             <h4>تي شيرت أديداس</h4>
                                             <div class="custom-text-muted">
                                                 ملابس رجالي
@@ -269,8 +265,8 @@
                                 <td>300$</td>
                                 <td>
                                     <input name="product2" type="hidden" value="تي شيرت أديداس">
-                                    <select name="quantity2" class="form-control custom-form-control select-inline quantity" data-product-quantity>
-                                        <option value="1" selected>1</option>
+                                    <select name="quantity2" class="form-control custom-form-control quantity" data-product-quantity>
+                                        <option value="1" >1</option>
                                         <option value="2">2</option>
                                         <option value="3">3</option>
                                     </select>
@@ -281,7 +277,7 @@
                                 <td>
                                     <button class="btn btn-danger custom-btn-danger custom-btn" data-remove-from-cart >
                                         <span class="d-none d-md-block">حذف</span>
-                                        <i class="fas fa-trash-alt d-block d-md-none"></i>
+                                        <i class="far fa-trash-alt d-block d-md-none"></i>
                                     </button>
                                 </td>
                             </tr>
@@ -300,10 +296,10 @@
                             </tr>
                         </tfoot>
                     </table>
-                    <button type="submit" class="btn custom-btn-primary2 custom-btn-with-icon btn-lg">
+                    <button type="submit" class="btn custom-btn-primary2 custom-btn-with-icon">
                         <span>
-                        إكمال عمليّة الشّراء
-                        <i class="fas fa-dollar-sign fa-lg"></i>
+                            إكمال عمليّة الشّراء
+                            <i class="fas fa-dollar-sign fa-lg"></i>
                         </span>
                     </button>
                 </div>

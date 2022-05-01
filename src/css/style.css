@@ -216,6 +216,12 @@ body {
 	border-radius: 3px;
 }
 
+.custom-btn-danger {
+    color: #FF3956!important;
+    border-color: #FF3956!important;
+    background-color: transparent;
+}
+
 .custom-btn-primary2 {
     background-color: #F8AD47;
     border-color: #F8AD47;
@@ -267,6 +273,16 @@ body {
 h3.custom-heading {
     font-size: 24px;
 	margin-bottom:25px;
+}
+
+h3.table-title {
+	margin-top:25px;
+}
+
+
+.custom-table tfoot td {
+    border-bottom: none;
+    font-size: 150%;
 }
 
 .custom-thumbnail {
@@ -705,6 +721,32 @@ h1.custom-heading {
 	margin-left: 10px;
 }
 
+.custom-table th {
+    color: #C2C2C2;
+    font-weight: normal;
+}
+  
+.custom-table th, .custom-table td {
+    padding: 15px;
+    font-size: 120%;
+    vertical-align: middle;
+    border-bottom: 1px solid #EBEBEB;
+    border-top: 1px solid #EBEBEB;
+}
+
+.custom-table th:first-child {
+    width: 50%;
+}
+
+.custom-table th:not(:first-child) {
+    text-align: center;
+}
+
+tfoot td {
+    border-bottom: none;
+    font-size: 150%;    
+}
+
 .custom-table .custom-media h4 {
 	font-size: 18px;
 	margin: 12px 0;
@@ -822,6 +864,36 @@ SEARCH PAGE
 #search-results h3.heading-with-border-bottom {
     margin-top: 0;
 }
+
+.ui-slider {
+    margin: 25px 0 15px!important;
+    height: 2px!important;
+    background: #c5c5c5!important;
+  
+}
+    .ui-slider-handle {
+      background-color: #F8AD47!important;
+      border: none!important;
+      border-radius: 50%!important;
+      height: 12px!important;
+      width: 12px!important;
+      top: -6px!important;
+    }
+  
+    .ui-slider-range {
+      border: 1px solid #F8AD47!important;
+      top: -1px!important;
+    }
+  
+  
+  @media (max-width: 991px) {
+    .ui-slider .ui-slider-handle {
+      height: 20px;
+      width: 20px;
+      top: -10px;
+    }
+  }
+
 /**************************************************************
 ****************
 CONTACT PAGE

@@ -29,7 +29,9 @@
     "@popperjs/core": "^2.11.5",
     "bootstrap": "^5.0.1",
     "jquery": "^3.6.0",
+    "jquery-ui-touch-punch": "^0.2.3",
     "url-loader": "^4.1.1",
-    "webpack-dev-server": "^4.8.1"
+    "webpack-dev-server": "^4.8.1",
+    "webpack-jquery-ui": "^2.0.1"
   }
 }
