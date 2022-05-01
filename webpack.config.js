@@ -27,6 +27,13 @@ module.exports = {
     module: {
         rules: [
             {
+                test: require.resolve('jquery'),
+                loader: 'expose-loader',
+                options: {
+                  exposes: ['$', 'jQuery'],
+                }
+              },
+            {
                 test: /\.html$/,
                 use: [{
                     loader: "html-loader",
