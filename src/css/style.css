@@ -44,7 +44,7 @@ body {
     color: #777;
 }
 
-.custom-form-control,.custom-btn {
+.custom-form-control, .custom-btn {
     color: #868686!important;
     border: 1px solid #EBEBEB;
     box-shadow: none;
@@ -432,6 +432,12 @@ h3.custom-heading {
 	padding-top: 25px
 }
 
+.add-to-cart-btn {
+    background-color: #fff!important;
+    color: #19becd!important;
+    font-weight: 700!important;
+}
+
 /*تذييل الصفحة*/
 #brand-logos {
     background-color: #dbeefa;
@@ -657,22 +663,22 @@ Product Page
 }
 
 /*التعليقات على المنتج*/
-.comments .media {
+.comments .comment {
     margin: 15px;
 }
 
-.comments .media:first-child {
+.comments .comment:first-child {
 	margin-top: 0px;
 }
 
-.comments .media img {
+.comments .comment img {
     width: 80px;
     height: 80px;
     margin-left: 10px;
 	border: 1px solid #dfdfdf;
 }
 
-.comments .media .media-heading {
+.comments .comment h4 {
     font-size: 18px;
 	margin-bottom: 5px;
 }
@@ -1066,4 +1072,3 @@ MEDIA QUERY
 	}
     
 }
-

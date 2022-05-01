@@ -113,7 +113,7 @@
                 <div class="row">
                     <!--صور المنتج-->
                     <div class="col-lg-5 offset-lg-1 col-md-9 offset-md-2">
-                        <div class="carousel slide" id="carousel-product-images" data-ride="carousel">
+                        <div class="carousel slide" id="carousel-product-images" data-bs-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
                                     <img src="images/product_1.jpg" alt="صورة أماميّة للقميص">
@@ -123,8 +123,8 @@
                                 </div>
                             </div>
                             <div class="carousel-indicators custom-carousel-indicators-primary">
-                                <img data-target="#carousel-product-images" data-slide-to="0" class="active" src="images/product_1.jpg" alt="صورة أمامية">
-                                <img data-target="#carousel-product-images" data-slide-to="1" src="images/product_2.jpg" alt="صورة خلفية">
+                                <img data-bs-target="#carousel-product-images" data-bs-slide-to="0" class="active" src="images/product_1.jpg" alt="صورة أمامية">
+                                <img data-bs-target="#carousel-product-images" data-bs-slide-to="1" src="images/product_2.jpg" alt="صورة خلفية">
                             </div>
                         </div>
                     </div>
@@ -139,8 +139,8 @@
                                     ملابس رجاليّ
                                 </div>
                                 <div class="clearfix block-100">
-                                    <h2 class="float-right">قميص تك فت بيز</h2>
-                                    <div class="float-left price large">35$</div>
+                                    <h2 class="float-start">قميص تك فت بيز</h2>
+                                    <div class="float-end price large">35$</div>
                                 </div>
                             </div>
                             <!--نهاية الفئة والعنوان والسعر-->
@@ -163,7 +163,7 @@
                                 </div>
                                 <div class="col-6">
                                     <div class="clearfix">
-                                        <div class="float-left rating">
+                                        <div class="float-end rating">
                                             <i class="fas fa-star active"></i>
                                             <i class="fas fa-star active"></i>
                                             <i class="fas fa-star active"></i>
@@ -236,11 +236,11 @@
                             <div class="row product-quantity clearfix">
                                 <div class="">
                                     <div class="clearfix">
-                                        <div class="float-right label">
+                                        <div class="float-start label">
                                             العدد المطلوب:
                                         </div>
-                                        <div class="float-right">
-                                            <select class="form-control custom-form-control" name="quantity">
+                                        <div class="float-start">
+                                            <select class="custom-form-control" name="quantity">
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>
@@ -284,18 +284,18 @@
                 </div>
                 <!--نهاية الوصف المفصل للمنتج-->
 
-                <!--التعليقات على المُنتج-->
-                <div class="row">
+                 <!--التعليقات على المُنتج-->
+                 <div class="row">
                     <div class="comments block-100">
                         <h3 class="custom-heading heading-inline heading-with-border-bottom">
                             التعليقات على المُنتج
                         </h3>
                         <div class="borders-between">
                             <div class="row">
-                                <div class="media">
+                                <div class="comment d-flex">
                                     <img src="images/reviewer_1.jpg" alt="محمد هاني">
-                                    <div class="media-body">
-                                        <h4 class="media-heading">
+                                    <div>
+                                        <h4>
                                             محمد هاني
                                         </h4>
                                         <div class="rating">
@@ -312,11 +312,11 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="media">
+                                <div class="comment d-flex">
                                     <img src="images/reviewer_2.jpg" alt="منى محمود">
-                                    <div class="media-body">
-                                        <h4 class="media-heading">
-                                        منى محمود
+                                    <div>
+                                        <h4>
+                                            محمد هاني
                                         </h4>
                                         <div class="rating">
                                             <span class="fas fa-star active"></span>
@@ -351,20 +351,20 @@
                             <img src="images/most_sold_2.jpg" alt="فلورا تي شيرت">
                             <div class="card-body">
                                 <div class="clearfix">
-                                    <h4 class="float-right">فلورا تي شيرت</h4>
-                                    <div class="price float-left">
+                                    <h4 class="float-start">فلورا تي شيرت</h4>
+                                    <div class="price float-end">
                                         200$
                                     </div>
                                 </div>
                                 <div class="clearfix">
-                                    <div class="rating float-right">
+                                    <div class="rating float-start">
                                         <i class="fas fa-star active"></i>
                                         <i class="fas fa-star active"></i>
                                         <i class="fas fa-star active"></i>
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
                                     </div>
-                                    <button class="float-left btn btn-default add-to-cart-btn d-block d-lg-none" data-add-to-cart="">
+                                    <button class="float-end btn btn-default add-to-cart-btn d-block d-lg-none" data-add-to-cart="">
                                         إضافة للعربة
                                         <i class="fas fa-cart-plus"></i>
                                     </button>
@@ -386,8 +386,8 @@
                             <img src="images/most_sold_1.jpg" alt="شير بلوز من نافي">
                             <div class="card-body">
                                 <div class="clearfix">
-                                    <h4 class="float-right">شير بلوز من نافي</h4>
-                                    <div class="price float-left">
+                                    <h4 class="float-start">شير بلوز من نافي</h4>
+                                    <div class="price float-end">
                                         500$
                                     </div>
                                 </div>
@@ -399,7 +399,7 @@
                                         <i class="fas fa-star active"></i>
                                         <i class="fas fa-star"></i>
                                     </div>
-                                    <button class="float-left btn btn-default add-to-cart-btn d-block d-lg-none" data-add-to-cart="">
+                                    <button class="float-end btn btn-default add-to-cart-btn d-block d-lg-none" data-add-to-cart="">
                                         إضافة للعربة
                                         <i class="fas fa-cart-plus"></i>
                                     </button>
@@ -422,8 +422,8 @@
                             <img src="images/most_sold_3.jpg" alt="جاكت أولادي">
                             <div class="card-body">
                                 <div class="clearfix">
-                                    <h4 class="float-right">جاكت أولادي</h4>
-                                    <div class="price float-left">
+                                    <h4 class="float-start">جاكت أولادي</h4>
+                                    <div class="price float-end">
                                         450$
                                     </div>
                                 </div>
@@ -435,7 +435,7 @@
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
                                     </div>
-                                    <button class="float-left btn btn-default add-to-cart-btn d-block d-lg-none" data-add-to-cart="">
+                                    <button class="float-end btn btn-default add-to-cart-btn d-block d-lg-none" data-add-to-cart="">
                                         إضافة للعربة
                                         <i class="fas fa-cart-plus"></i>
                                     </button>
@@ -457,8 +457,8 @@
                             <img src="images/hm_3.jpg" alt="طقم للصغار">
                             <div class="card-body">
                                 <div class="clearfix">
-                                    <h4 class="float-right">طقم للصغار</h4>
-                                    <div class="price float-left">
+                                    <h4 class="float-start">طقم للصغار</h4>
+                                    <div class="price float-end">
                                         25$
                                     </div>
                                 </div>
@@ -470,7 +470,7 @@
                                         <i class="fas fa-star active"></i>
                                         <i class="fas fa-star active"></i>
                                     </div>
-                                    <button class="float-left btn btn-default add-to-cart-btn d-block d-lg-none" data-add-to-cart="">
+                                    <button class="float-end btn btn-default add-to-cart-btn d-block d-lg-none" data-add-to-cart="">
                                         إضافة للعربة
                                         <i class="fas fa-cart-plus"></i>
                                     </button>
