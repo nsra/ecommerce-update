@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.rtl.min.css';
 // import '@laylazi/bootstrap-rtl/dist/css/bootstrap-rtl.min.css';
 import '@fortawesome/fontawesome-free/js/all.min';
-import './css/style.css'
+import './css/style.css';
 import 'popper.js/dist/popper.min';
 import $ from 'jquery';
 // import 'bootstrap/dist/js/bootstrap.min.js';
@@ -13,9 +13,11 @@ import 'jquery-ui-touch-punch/jquery.ui.touch-punch.min.js';
 
 $(function () {
     $('[data-bs-toggle="tooltip"]').tooltip()
+
     $('.add-to-cart-btn').on("click", function () {
         alert('أضيف المُنتج إلى عربة الشراء');
     });
+
     $('.product-option input[type="radio"]').on("change", function () {
         $(this).parents('.product-option').siblings().removeClass('active');
         $(this).parents('.product-option').addClass('active');
@@ -28,8 +30,28 @@ $(function () {
         calculateTotalPrice();
     });
 
-    function calculateTotalPrice() {
+    // عندما تتغير كمية المنتج
+    $('[data-product-quantity]').on("change", function () {
+        // اجلب الكمية الجديدة
+        var newQuantity = $(this).val();
 
+        // ابحث عن السّطر الّذي يحتوي معلومات هذا المُنتج
+        var $parent = $(this).parents('[data-product-info]');
+
+        // اجلب سعر القطعة الواحدة من معلومات المنتج
+        var pricePerUnit = $parent.attr('data-product-price');
+
+        // السعر الإجمالي للمنتج هو سعر القطعة مضروبًا بعددها
+        var totalPriceForProduct = newQuantity * pricePerUnit;
+
+        // عين السعر الجديد ضمن خليّة السّعر الإجمالي للمنتج في هذا السطر
+        $parent.find('.total-price-for-product').text(totalPriceForProduct + '$');
+
+        // حدث السعر الإجمالي لكل المُنتجات
+        calculateTotalPrice();
+    });
+
+    function calculateTotalPrice() {
         // أنشئ متغيّرًا جديدًا لحفظ السعر الإجمالي
         var totalPriceForAllProducts = 0;
 
