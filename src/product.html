@@ -23,7 +23,7 @@
                             <img src="./images/logo.png" alt="متجر عربي">
                         </a>
                     </div>
-                    <form class="d-flex align-items-center">
+                    <form class="d-flex align-items-center inline-form">
                         <input class="form-control custom-form-control" type="search" placeholder="كلمة البحث ..">
                         <div class="dropdown categories">
                             <a class="nav-link dropdown-toggle custom-btn" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -135,10 +135,10 @@
                         <form id="form-product-selection" class="borders-between">
                             <!--الفئة والعنوان والسعر-->
                             <div class="row">
-                                <div class="product-category block-100">
+                                <div class="product-category w-100">
                                     ملابس رجاليّ
                                 </div>
-                                <div class="clearfix block-100">
+                                <div class="clearfix w-100">
                                     <h2 class="float-start">قميص تك فت بيز</h2>
                                     <div class="float-end price large">35$</div>
                                 </div>
@@ -162,8 +162,8 @@
                                     </div>
                                 </div>
                                 <div class="col-6">
-                                    <div class="clearfix">
-                                        <div class="float-end rating">
+                                    <div>
+                                        <div class="rating">
                                             <i class="fas fa-star active"></i>
                                             <i class="fas fa-star active"></i>
                                             <i class="fas fa-star active"></i>
@@ -233,19 +233,17 @@
                             </div>
 
                             <!--اختيار الكمية-->
-                            <div class="row product-quantity clearfix">
-                                <div class="">
-                                    <div class="clearfix">
-                                        <div class="float-start label">
-                                            العدد المطلوب:
-                                        </div>
-                                        <div class="float-start">
-                                            <select class="custom-form-control" name="quantity">
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                            </select>
-                                        </div>
+                            <div class="row product-quantity">
+                                <div class="clearfix">
+                                    <div class="float-start label">
+                                        العدد المطلوب:
+                                    </div>
+                                    <div class="float-end">
+                                        <select class="custom-form-control" name="quantity">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                        </select>
                                     </div>
                                 </div>
                             </div>
@@ -286,7 +284,7 @@
 
                  <!--التعليقات على المُنتج-->
                  <div class="row">
-                    <div class="comments block-100">
+                    <div class="comments w-100">
                         <h3 class="custom-heading heading-inline heading-with-border-bottom">
                             التعليقات على المُنتج
                         </h3>
@@ -343,7 +341,7 @@
                     <div class="col-lg-3 col-md-4">
                         <div class="card custom-thumbnail">
                             <div class="overlay">
-                                <button class="btn btn-secondary add-to-cart-btn" data-add-to-cart="">
+                                <button class="btn btn-default add-to-cart-btn" data-add-to-cart="">
                                     إضافة للعربة
                                     <i class="fas fa-cart-plus"></i>
                                 </button>
@@ -356,15 +354,15 @@
                                         200$
                                     </div>
                                 </div>
-                                <div class="clearfix">
-                                    <div class="rating float-start">
+                                <div>
+                                    <div class="rating">
                                         <i class="fas fa-star active"></i>
                                         <i class="fas fa-star active"></i>
                                         <i class="fas fa-star active"></i>
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
                                     </div>
-                                    <button class="float-end btn btn-default add-to-cart-btn d-block d-lg-none" data-add-to-cart="">
+                                    <button class="btn btn-default add-to-cart-btn d-block d-lg-none mx-auto" data-add-to-cart="">
                                         إضافة للعربة
                                         <i class="fas fa-cart-plus"></i>
                                     </button>
@@ -378,7 +376,7 @@
                     <div class="col-lg-3 col-md-4">
                         <div class="card custom-thumbnail">
                             <div class="overlay">
-                                <button class="btn btn-secondary add-to-cart-btn">
+                                <button class="btn btn-default add-to-cart-btn">
                                     إضافة للعربة
                                     <i class="fas fa-cart-plus"></i>
                                 </button>
@@ -391,7 +389,7 @@
                                         500$
                                     </div>
                                 </div>
-                                <div class="clearfix">
+                                <div>
                                     <div class="rating">
                                         <i class="fas fa-star active"></i>
                                         <i class="fas fa-star active"></i>
@@ -399,7 +397,7 @@
                                         <i class="fas fa-star active"></i>
                                         <i class="fas fa-star"></i>
                                     </div>
-                                    <button class="float-end btn btn-default add-to-cart-btn d-block d-lg-none" data-add-to-cart="">
+                                    <button class="btn btn-default add-to-cart-btn d-block d-lg-none mx-auto" data-add-to-cart="">
                                         إضافة للعربة
                                         <i class="fas fa-cart-plus"></i>
                                     </button>
@@ -414,7 +412,7 @@
                         <div class="card custom-thumbnail">
                             <div class="sale">50%</div>
                             <div class="overlay">
-                                <button class="btn btn-secondary add-to-cart-btn">
+                                <button class="btn btn-default add-to-cart-btn">
                                     إضافة للعربة
                                     <i class="fas fa-cart-plus"></i>
                                 </button>
@@ -427,7 +425,7 @@
                                         450$
                                     </div>
                                 </div>
-                                <div class="clearfix">
+                                <div>
                                     <div class="rating">
                                         <i class="fas fa-star active"></i>
                                         <i class="fas fa-star active"></i>
@@ -435,7 +433,7 @@
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
                                     </div>
-                                    <button class="float-end btn btn-default add-to-cart-btn d-block d-lg-none" data-add-to-cart="">
+                                    <button class="btn btn-default add-to-cart-btn d-block d-lg-none mx-auto" data-add-to-cart="">
                                         إضافة للعربة
                                         <i class="fas fa-cart-plus"></i>
                                     </button>
@@ -449,7 +447,7 @@
                     <div class="col-lg-3 col-md-4 d-none d-lg-block">
                         <div class="card custom-thumbnail">
                             <div class="overlay">
-                                <button class="btn btn-secondary add-to-cart-btn">
+                                <button class="btn btn-default add-to-cart-btn">
                                     إضافة للعربة
                                     <i class="fas fa-cart-plus"></i>
                                 </button>
@@ -462,7 +460,7 @@
                                         25$
                                     </div>
                                 </div>
-                                <div class="clearfix">
+                                <div>
                                     <div class="rating">
                                         <i class="fas fa-star active"></i>
                                         <i class="fas fa-star active"></i>
@@ -470,7 +468,7 @@
                                         <i class="fas fa-star active"></i>
                                         <i class="fas fa-star active"></i>
                                     </div>
-                                    <button class="float-end btn btn-default add-to-cart-btn d-block d-lg-none" data-add-to-cart="">
+                                    <button class="btn btn-default add-to-cart-btn d-block d-lg-none mx-auto" data-add-to-cart="">
                                         إضافة للعربة
                                         <i class="fas fa-cart-plus"></i>
                                     </button>
