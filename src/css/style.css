@@ -642,8 +642,8 @@ Product Page
 }
 
 .custom-btn-with-icon {
-    margin-top: 15px; 
-    margin-bottom: 50px;
+    /* margin-top: 15px; 
+    margin-bottom: 50px; */
     font-size: 18px;
     padding: 5px 10px 5px 10px;
 }
