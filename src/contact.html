@@ -14,7 +14,7 @@
     <!--الشريط العلوي-->
     <div class="row">
       <nav class="navbar custom-navbar navbar-expand-lg">
-        <div class="container">
+        <div class="container p-0">
           <div class="navbar-header">
             <button class="navbar-toggler btn btn-icon" data-bs-toggle="collapse"
               data-bs-target="#navbar-collapsed-menu" aria-controls="navbar-collapsed-menu">
@@ -23,7 +23,7 @@
             <a href="./checkout.html" class="navbar-toggler btn btn-icon">
               <i class="fas fa-shopping-cart"></i>
             </a>
-            <a href="." class="navbar-brand">
+            <a href="." class="me-4">
               <img src="./images/logo.png" alt="متجر عربي">
             </a>
           </div>
@@ -38,21 +38,21 @@
                 <li>
                   <div class="checkbox">
                     <label>
-                      <input type="checkbox" name="search-category" value="men"> رجالي
+                      <input type="checkbox" class="mx-1" name="search-category" value="men"> رجالي
                     </label>
                   </div>
                 </li>
                 <li>
                   <div class="checkbox">
                     <label>
-                      <input type="checkbox" name="search-category" value="women"> نسائي
+                      <input type="checkbox" class="mx-1" name="search-category" value="women"> نسائي
                     </label>
                   </div>
                 </li>
                 <li>
                   <div class="checkbox">
                     <label>
-                      <input type="checkbox" name="search-category" value="kids"> أطفال
+                      <input type="checkbox" class="mx-1" name="search-category" value="kids"> أطفال
                     </label>
                   </div>
                 </li>
@@ -86,7 +86,7 @@
               <li class="nav-item active">
                 <a class="nav-link" href="./contact.html">تواصل معنا</a>
               </li>
-              <li class="d-none d-lg-block">
+              <li class="d-none d-lg-block mt-2">
                 <a href="checkout.html" id="btn-shopping-cart" class="btn btn-icon" title="عربة الشراء"
                   data-bs-toggle="tooltip" data-bs-placement="bottom">
                   <i class="fas fa-shopping-cart"></i>
@@ -98,7 +98,6 @@
       </nav>
     </div>
     <!--نهاية الشريط العلوي-->
-
     <!--الخريطة-->
     <div class="row">
       <div id="map">
@@ -122,14 +121,14 @@
       </div>
       <!--نهاية عناصر التّنقّل الفرعيّة-->
 
-      <div id="contact-options" class="row">
+      <div id="contact-options" class="row mb-4">
 
         <!--معلومات التواصل-->
         <div class="col-lg-3 offset-lg-2">
-          <h4 class="heading-with-border-bottom">
+          <h4 class="heading-with-border-bottom ">
             معلومات التواصل
           </h4>
-          <div id="contact-info">
+          <div id="contact-info" class="mb-5">
             <div>
               <i class="fas fa-phone fa-lg mb-0"></i>
               974.4422.7813
@@ -145,16 +144,14 @@
           </div>
 
           <!--قسم الاشتراك بالنّشرة البريدية-->
-          <h4 class="heading-with-border-bottom mt-4">اشترك بالنشرة البريدية</h4>
+          <h4 class="heading-with-border-bottom mt-2">اشترك بالنشرة البريدية</h4>
           <form id="form-subscription">
             <div class="input-group">
-              <div class="input-group">
-                <input type="email" class="form-control custom-form-control" placeholder="البريد الإلكتروني"
-                  name="email" required>
-                <button class="btn custom-btn-primary2" type="submit">
-                  متابعة
-                </button>
-              </div>
+              <input type="email" class="form-control custom-form-control" placeholder="البريد الإلكتروني" name="email"
+                required>
+              <button class="btn custom-btn-primary2" type="submit">
+                متابعة
+              </button>
             </div>
           </form>
         </div>
@@ -174,20 +171,16 @@
                   placeholder="البريد الإلكتروني" required>
               </div>
             </div>
-            <div>
-              <textarea class="form-control custom-input-details custom-form-control" name="message"
-                placeholder="نص الرسالة" required></textarea>
-            </div>
-            <div>
-              <div class="clearfix">
-                <div class="float-start"></div>
-                <button type="submit" class="float-end btn custom-btn-primary2 custom-btn-with-icon my-3">
-                  <span>
-                    إرسال الرسالة
-                    <i class="far fa-paper-plane"></i>
-                  </span>
-                </button>
-              </div>
+            <textarea class="form-control custom-input-details custom-form-control" name="message"
+              placeholder="نص الرسالة" required></textarea>
+            <div class="clearfix">
+              <div class="float-start"></div>
+              <button type="submit" class="float-end btn custom-btn-primary2 custom-btn-with-icon my-3">
+                <span>
+                  إرسال الرسالة
+                  <i class="far fa-paper-plane"></i>
+                </span>
+              </button>
             </div>
           </form>
         </div>

@@ -13,7 +13,7 @@
         <!--الشريط العلوي-->
         <div class="row">
             <nav class="navbar custom-navbar navbar-expand-lg">
-                <div class="container">
+                <div class="container p-0">
                     <div class="navbar-header">
                         <button class="navbar-toggler btn btn-icon" data-bs-toggle="collapse"
                             data-bs-target="#navbar-collapsed-menu" aria-controls="navbar-collapsed-menu">
@@ -22,7 +22,7 @@
                         <a href="./checkout.html" class="navbar-toggler btn btn-icon">
                             <i class="fas fa-shopping-cart"></i>
                         </a>
-                        <a href="." class="navbar-brand">
+                        <a href="." class="me-4">
                             <img src="./images/logo.png" alt="متجر عربي">
                         </a>
                     </div>
@@ -37,21 +37,24 @@
                                 <li>
                                     <div class="checkbox">
                                         <label>
-                                            <input type="checkbox" name="search-category" value="men"> رجالي
+                                            <input type="checkbox" class="mx-1" name="search-category" value="men">
+                                            رجالي
                                         </label>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="checkbox">
                                         <label>
-                                            <input type="checkbox" name="search-category" value="women"> نسائي
+                                            <input type="checkbox" class="mx-1" name="search-category" value="women">
+                                            نسائي
                                         </label>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="checkbox">
                                         <label>
-                                            <input type="checkbox" name="search-category" value="kids"> أطفال
+                                            <input type="checkbox" class="mx-1" name="search-category" value="kids">
+                                            أطفال
                                         </label>
                                     </div>
                                 </li>
@@ -85,7 +88,7 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="./contact.html">تواصل معنا</a>
                             </li>
-                            <li class="d-none d-lg-block">
+                            <li class="d-none d-lg-block mt-2">
                                 <a href="checkout.html" id="btn-shopping-cart" class="btn btn-icon" title="عربة الشراء"
                                     data-bs-toggle="tooltip" data-bs-placement="bottom">
                                     <i class="fas fa-shopping-cart"></i>
@@ -192,25 +195,25 @@
                                     <div class="product-option">
                                         <label>
                                             S
-                                            <input type="radio" name="size" value="sm">
+                                            <input type="radio" class="d-none" name="size" value="sm">
                                         </label>
                                     </div>
                                     <div class="product-option active">
                                         <label>
                                             M
-                                            <input type="radio" name="size" value="m" checked>
+                                            <input type="radio" class="d-none" name="size" value="m" checked>
                                         </label>
                                     </div>
                                     <div class="product-option">
                                         <label>
                                             L
-                                            <input type="radio" name="size" value="l">
+                                            <input type="radio" class="d-none" name="size" value="l">
                                         </label>
                                     </div>
                                     <div class="product-option">
                                         <label>
                                             XL
-                                            <input type="radio" name="size" value="xl">
+                                            <input type="radio" class="d-none" name="size" value="xl">
                                         </label>
                                     </div>
                                 </div>
@@ -220,40 +223,36 @@
                                     <br />
                                     <div class="product-option color-option" style="background-color: #FFAF32;">
                                         <label>&nbsp;
-                                            <input type="radio" name="color" value="orange">
+                                            <input type="radio" class="d-none" name="color" value="orange">
                                         </label>
                                     </div>
                                     <div class="product-option color-option" style="background-color: #FF322C;">
                                         <label>&nbsp;
-                                            <input type="radio" name="color" value="red">
+                                            <input type="radio" class="d-none" name="color" value="red">
                                         </label>
                                     </div>
                                     <div class="product-option color-option" style="background-color: #AC38B6;">
                                         <label>&nbsp;
-                                            <input type="radio" name="color" value="purple">
+                                            <input type="radio" class="d-none" name="color" value="purple">
                                         </label>
                                     </div>
                                     <div class="product-option color-option active" style="background-color: #00C1CE;">
                                         <label>&nbsp;
-                                            <input type="radio" name="color" value="blue" checked>
+                                            <input type="radio" class="d-none" name="color" value="blue" checked>
                                         </label>
                                     </div>
                                 </div>
                             </div>
 
                             <!--اختيار الكمية-->
-                            <div class="row product-quantity">
-                                <div class="clearfix">
-                                    <div class="float-start label">
-                                        العدد المطلوب:
-                                    </div>
-                                    <div class="float-end">
-                                        <select class="custom-form-control" name="quantity">
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                        </select>
-                                    </div>
+                            <div class="product-quantity pb-3">
+                                <div class="pt-2">
+                                    العدد المطلوب:
+                                    <select class="custom-form-control ms-2" name="quantity">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
                                 </div>
                             </div>
                             <!--نهاية اختيار الكمية-->
@@ -300,7 +299,7 @@
                         </h3>
                         <div class="borders-between">
                             <div class="row">
-                                <div class="comment d-flex">
+                                <div class="comment m-2 mt-0 d-flex">
                                     <img src="images/reviewer_1.jpg" alt="محمد هاني">
                                     <div>
                                         <h4>
@@ -320,7 +319,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="comment d-flex">
+                                <div class="comment m-2 d-flex">
                                     <img src="images/reviewer_2.jpg" alt="منى محمود">
                                     <div>
                                         <h4>
