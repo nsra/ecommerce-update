@@ -54,9 +54,15 @@ body {
     padding: 6px 16px 7px 16px;
 }
 
+.custom-form-control:focus {
+    border-color: #C2101E;
+    box-shadow: 0 0 2px 0 #C2101E;
+}
+
 .custom-btn:hover {
     background-color: #d4d4d4;
     border: 1px solid #8c8c8c;
+    color: #b86d07;
 }
 
 .custom-input-details {
@@ -66,11 +72,6 @@ body {
     padding: 0px 16px;
     font-size: 18px;
     width: 98%;
-}
-
-.custom-form-control:focus {
-    border-color: #993300;
-    box-shadow: 0 0 2px 0 #993300;
 }
 
 .custom-navbar .search-btn {
@@ -215,7 +216,17 @@ body {
     color: #F8AD47 !important;
     border-color: #F8AD47 !important;
     background-color: transparent;
-    border-radius: 3px;
+}
+
+.custom-btn-primary:hover,
+.custom-btn-primary:focus,
+.custom-btn-primary:active,
+.custom-btn-primary:active:hover,
+.custom-btn-primary:active:focus,
+.custom-btn-primary:hover:disabled {
+    color: #b86d09;
+    border-color: #b86d09;
+    background-color: transparent;
 }
 
 /* #carousel-featured .product-details .sale.large span {
@@ -520,6 +531,7 @@ input[type="number"] {
 }
 
 .custom-btn-primary2 {
+    color: #000;
     background-color: #F8AD47;
     border-color: #F8AD47;
 }
@@ -530,9 +542,9 @@ input[type="number"] {
 .custom-btn-primary2:active:hover,
 .custom-btn-primary2:active:focus,
 .custom-btn-primary2:hover:disabled {
+    color: white;
     border-color: #b86d09;
     background-color: #b86d09;
-    color: white;
 }
 
 /**************************************************************
@@ -733,17 +745,21 @@ h1.custom-heading {
     border-top: 1px solid #EBEBEB;
 }
 
-.custom-table th:first-child {
+.custom-table th:first-child, .custom-table td:first-child{
     width: 50%;
 }
 
-.custom-table th:not(:first-child) {
+.custom-table th:not(:first-child), .custom-table td:not(:first-child) {
     text-align: center;
 }
 
-tfoot td {
+.custom-table tfoot td {
     border-bottom: none;
     font-size: 150%;
+}
+
+.custom-table th:first-child {
+    padding-right: 20px;
 }
 
 .custom-table h4 {
@@ -770,8 +786,19 @@ tfoot td {
 }
 
 .custom-btn-danger {
-    color: #FF3956;
-    border-color: #FF3956;
+    color: #ff5a5f;
+    border-color: #ff5a5f;
+    background-color: transparent;
+}
+
+.custom-btn-danger:hover,
+.custom-btn-danger:focus,
+.custom-btn-danger:active,
+.custom-btn-danger:active:hover,
+.custom-btn-danger:active:focus,
+.custom-btn-danger:hover:disabled {
+    color: #C2101E;
+    border-color: #C2101E;
     background-color: transparent;
 }
 

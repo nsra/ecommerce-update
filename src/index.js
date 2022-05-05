@@ -1,15 +1,12 @@
 import 'bootstrap/dist/css/bootstrap.rtl.min.css';
-// import '@laylazi/bootstrap-rtl/dist/css/bootstrap-rtl.min.css';
 import '@fortawesome/fontawesome-free/js/all.min';
 import './css/style.css';
 import 'popper.js/dist/popper.min';
 import $ from 'jquery';
-// import 'bootstrap/dist/js/bootstrap.min.js';
 window.bootstrap = require('bootstrap/dist/js/bootstrap.bundle.js');
 import 'webpack-jquery-ui';
 import 'webpack-jquery-ui/css';
 import 'jquery-ui-touch-punch/jquery.ui.touch-punch.min.js';
-
 
 $(function () {
     $('[data-bs-toggle="tooltip"]').tooltip()
