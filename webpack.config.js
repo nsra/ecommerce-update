@@ -107,11 +107,10 @@ module.exports = {
         new MiniCssExtractPlugin({
             filename: "css/style.css"
         }),
-        new CssMinimizerWebpackPlugin({}),
         new WebpackRTLPlugin({
-            diffOnly: false,
             filename: 'css/style.css',
         }),
+        new CssMinimizerWebpackPlugin({}),
     ],
 
 }

@@ -1,0 +1,26 @@
+@import '_variables';
+
+.sale {
+  background-color: $brand-secondary;
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  
+  &.large {
+    height: 60px;
+    width: 60px;
+    padding: 35px;
+    font-size: 130%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // transform: rotate(-25deg);
+    transform: rotate(25deg);
+    flex-direction: column;
+    line-height: 90%;
+    // left: -15px;
+    right: -15px;
+    top: -15px;
+  }
+}

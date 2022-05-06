@@ -1,12 +1,11 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-
+import './scss/style.scss';
 import './css/style.css';
 import '@fortawesome/fontawesome-free/js/all.min';
 import $ from 'jquery';
 // import 'bootstrap/dist/js/bootstrap.min.js'
-window.bootstrap = require('bootstrap/dist/js/bootstrap.bundle.js');
 import 'webpack-jquery-ui';
 import 'webpack-jquery-ui/css';
+window.bootstrap = require('bootstrap/dist/js/bootstrap.bundle.js');
 import 'jquery-ui-touch-punch/jquery.ui.touch-punch.min.js';
 
 $(function () {
