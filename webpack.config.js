@@ -2,6 +2,8 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CssMinimizerWebpackPlugin = require("css-minimizer-webpack-plugin");
+const WebpackRTLPlugin = require('webpack-rtl-plugin')
+
 module.exports = {
     mode: "development",
     entry: {
@@ -106,6 +108,10 @@ module.exports = {
             filename: "css/style.css"
         }),
         new CssMinimizerWebpackPlugin({}),
+        new WebpackRTLPlugin({
+            diffOnly: false,
+            filename: 'css/style.css',
+        }),
     ],
 
 }
