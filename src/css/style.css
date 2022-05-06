@@ -49,6 +49,7 @@ body {
     color: #868686 !important;
     border: 1px solid #EBEBEB;
     box-shadow: none;
+    border-radius: 2px;
     height: 38px;
     transition: all 0.3s ease;
     padding: 6px 16px 7px 16px;
@@ -62,7 +63,6 @@ body {
 .custom-btn:hover {
     background-color: #d4d4d4;
     border: 1px solid #8c8c8c;
-    color: #b86d07;
 }
 
 .custom-input-details {
@@ -531,7 +531,7 @@ input[type="number"] {
 }
 
 .custom-btn-primary2 {
-    color: #000;
+    color: white;
     background-color: #F8AD47;
     border-color: #F8AD47;
 }
@@ -1074,7 +1074,6 @@ MEDIA QUERY
         border-bottom: 0px solid #EBEBEB;
     }
 
-    
     .ui-slider .ui-slider-handle {
         height: 20px;
         width: 20px;
