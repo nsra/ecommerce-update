@@ -5,7 +5,7 @@ const CssMinimizerWebpackPlugin = require("css-minimizer-webpack-plugin");
 const WebpackRTLPlugin = require('webpack-rtl-plugin')
 
 module.exports = {
-    mode: "development",
+    // mode: "development",
     entry: {
         app: './src/index.js'
     },
@@ -20,7 +20,7 @@ module.exports = {
             directory: path.join(__dirname, 'dist'),
         },
         compress: true,
-        port: 9001,
+        port: 9002,
         devMiddleware: {
             writeToDisk: true,
         }
@@ -36,12 +36,10 @@ module.exports = {
             },
             {
                 test: /\.html$/,
-                use: [{
-                    loader: "html-loader",
-                    options: {
-                        minimize: true,
-                    }
-                }]
+                loader: "html-loader",
+                options: {
+                    // minimize: true,
+                }
             },
             {
                 test: /\.(sa|sc|c)ss$/,
