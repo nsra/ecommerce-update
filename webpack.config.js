@@ -43,13 +43,20 @@ module.exports = {
             },
             {
                 test: /\.(sa|sc|c)ss$/,
+                exclude: /bootstrap\.scss$/i,
                 use: [{
                         loader: MiniCssExtractPlugin.loader,
-                        // options: {
-                        //     publicPath: '../'
-                        // }
                     },
                     'css-loader',
+                    'sass-loader'
+                ]
+            },
+            {
+                test: /bootstrap\.scss$/,
+                use: [{
+                        loader: MiniCssExtractPlugin.loader,
+                    },
+                    'rtlcss-loader',
                     'sass-loader'
                 ]
             },
@@ -75,6 +82,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             filename: "index.html",
             template: "./src/index.html",
+            dir: 'rtl'
         }),
 
         new HtmlWebpackPlugin({
