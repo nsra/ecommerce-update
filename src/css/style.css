@@ -205,8 +205,8 @@ body {
     padding: 10px;
     position: absolute !important;
     top: -10px;
-    /* right: -10px; */
-    left: -10px;
+    right: -10px;
+    /* left: -10px; */
     background-color: #F7F8F3;
 }
 
@@ -331,8 +331,8 @@ h3.custom-heading {
 .custom-thumbnail .sale {
     padding: 5px 10px;
     position: absolute;
-    /* left: 16px; */
-    right: 16px;
+    left: 16px;
+    /* right: 16px; */
     top: 14px;
     /* direction: ltr; */
 }
@@ -364,8 +364,8 @@ h3.custom-heading {
 /* refere to top start bottom end */
 .custom-carousel-indicators-primary {
     top: 235px;
-    /* right: 41% ; */
-    left: 40%;
+    right: 41%;
+    /* left: 40%; */
 }
 
 .custom-carousel-indicators-primary img.active {
@@ -1036,7 +1036,8 @@ MEDIA QUERY
     }
 
     #carousel-featured .carousel-indicators {
-        left: auto!important;
+        /* left: auto!important; */
+        right: auto!important;
     }
     
     #carousel-featured .carousel-indicators {

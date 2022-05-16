@@ -2,10 +2,8 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CssMinimizerWebpackPlugin = require("css-minimizer-webpack-plugin");
-const WebpackRTLPlugin = require('webpack-rtl-plugin')
 
 module.exports = {
-    // mode: "development",
     entry: {
         app: './src/index.js'
     },
@@ -82,7 +80,6 @@ module.exports = {
         new HtmlWebpackPlugin({
             filename: "index.html",
             template: "./src/index.html",
-            dir: 'rtl'
         }),
 
         new HtmlWebpackPlugin({
@@ -112,9 +109,6 @@ module.exports = {
 
         new MiniCssExtractPlugin({
             filename: "css/style.css"
-        }),
-        new WebpackRTLPlugin({
-            filename: 'css/style.css',
         }),
         new CssMinimizerWebpackPlugin({}),
     ],

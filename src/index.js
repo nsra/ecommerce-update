@@ -1,3 +1,4 @@
+import 'bootstrap/scss/bootstrap.scss'
 import './scss/style.scss';
 import './css/style.css';
 import '@fortawesome/fontawesome-free/js/all.min';
