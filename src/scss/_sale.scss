@@ -15,12 +15,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    // transform: rotate(-25deg);
-    transform: rotate(25deg);
+    transform: rotate(-25deg);
     flex-direction: column;
     line-height: 90%;
     left: -15px;
-    // right: -15px;
     top: -15px;
   }
 }
