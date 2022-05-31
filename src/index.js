@@ -2,7 +2,7 @@ import 'bootstrap/scss/bootstrap.scss';
 import './scss/style.scss';
 import './css/style.css';
 import '@fortawesome/fontawesome-free/js/all.min';
-import 'popper.js/dist/popper.min';
+// import 'popper.js/dist/popper.min';
 import $ from 'jquery';
 window.bootstrap = require('bootstrap/dist/js/bootstrap.bundle.js');
 import 'webpack-jquery-ui';

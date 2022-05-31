@@ -72,7 +72,6 @@ module.exports = {
                     filename: "./fonts/[name][ext]",
                 },
             },
-
         ]
     },
 

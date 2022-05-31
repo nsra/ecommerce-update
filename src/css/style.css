@@ -21,8 +21,8 @@ body {
     border-bottom: 3px solid #EEF0EA;
     width: 100%;
     background-color: #fff;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding: 15px 0;
+    /* padding-bottom: 15px; */
 }
 
 /* .custom-navbar .container {
