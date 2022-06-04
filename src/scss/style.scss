@@ -6,7 +6,7 @@
 // @import './custom';
 
 .custom-form-control,.custom-btn {
-  color: #868686;
+  color: #868686; //notyet
   border: 1px solid #EBEBEB;
   box-shadow: none;
   border-radius: 2px;
@@ -20,6 +20,11 @@
 .custom-btn:hover{
   background-color: #d4d4d4;
   border: 1px solid #8c8c8c;
+  color: #FF3956
+}
+
+.custom-btn:focus{
+  color: #FF3956
 }
 
 .custom-form-control:focus {
