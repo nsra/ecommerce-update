@@ -87,15 +87,6 @@ body {
     font-weight: 700;
 }
 
-.custom-dropdown-menu .checkbox {
-    margin: 0 5px;
-    display: inline-block;
-}
-/* 
-.custom-dropdown-menu .checkbox label input {
-    margin-left: 5px;
-} */
-
 .custom-navbar .search-btn:hover,
 .custom-navbar .search-btn:active,
 .custom-navbar .search-btn:focus,
