@@ -977,10 +977,10 @@ MEDIA QUERY
         margin-bottom: 22px;
     }
 
-    .navbar-header .btn-icon {
+    /* .navbar-header .btn-icon {
         /* float: left; */
-        float: right;
-    }
+        /* float: right; */
+    /* }  */
 
     .inline-form {
         width: 100%;
@@ -1003,7 +1003,7 @@ MEDIA QUERY
 
     .custom-navbar a.btn-icon,
     .custom-navbar button.btn-icon {
-        padding: 5px 10px 4px;
+        padding: 5px 10px;
         color: #777;
         border: 1px solid #ddd;
         background-color: transparent;
@@ -1117,8 +1117,7 @@ MEDIA QUERY
         width: auto;
     }
 
-    #carousel-featured,
-    #carousel-featured .product-details {
+    #carousel-featured, #carousel-featured .product-details {
         height: auto;
     }
 
