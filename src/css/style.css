@@ -197,7 +197,6 @@ body {
     position: absolute !important;
     top: -10px;
     right: -10px;
-    /* left: -10px; */
     background-color: #F7F8F3;
 }
 
@@ -232,10 +231,10 @@ body {
     margin-top: 15px !important;
 } */
 
-#carousel-featured .carousel-control-prev,
-#carousel-featured .carousel-control-next {
+#carousel-featured .carousel-control-prev .fa-chevron-right,
+#carousel-featured .carousel-control-next .fa-chevron-left {
     color: #868686;
-    font-size: 20px;
+    font-size: 38px;
     cursor: pointer;
 }
 
@@ -336,13 +335,13 @@ h3.custom-heading {
     position: static;
 } */
 
-.custom-carousel-indicators-primary [data-bs-target] {
+.custom-carousel-indicators-primary img{
     opacity: 1 !important;
-    height: 70px;
-    width: 70px;
-    border: 2px solid #DDDDDB;
-    background-color: #fff;
-    margin-right: 0px !important;
+    height: 70px !important;
+    width: 70px !important;
+    border: 2px solid #DDDDDB !important;
+    /* background-color: #fff; */
+    margin: 0px !important;
 }
 
 .custom-carousel-indicators [data-bs-target] {
@@ -356,7 +355,6 @@ h3.custom-heading {
 .custom-carousel-indicators-primary {
     top: 235px;
     right: 41%;
-    /* left: 40%; */
 }
 
 .custom-carousel-indicators-primary img.active {
