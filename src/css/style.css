@@ -235,7 +235,6 @@ body {
 #carousel-featured .carousel-control-next .fa-chevron-left {
     color: #868686;
     font-size: 38px;
-    cursor: pointer;
 }
 
 #store-features {
@@ -276,19 +275,9 @@ h3.custom-heading {
     border-color: #53CCD7;
 }
 
-/* test fs-5 fs-6 before */
 .custom-thumbnail h4 {
     font-size: 18px;
-    padding-top: 10px;
 }
-
-/* .custom-thumbnail .card-body {
-    padding: 9px;
-} */
-
-/* .custom-thumbnail .price {
-    padding-top: 10px;
-} */
 
 .price {
     color: #53CCD7;
