@@ -311,9 +311,7 @@ h3.custom-heading {
     padding: 5px 10px;
     position: absolute;
     left: 16px;
-    /* right: 16px; */
     top: 14px;
-    /* direction: ltr; */
 }
 
 .custom-thumbnail .sale::before {
@@ -333,13 +331,6 @@ h3.custom-heading {
     margin: 0px !important;
 }
 
-.custom-carousel-indicators [data-bs-target] {
-    height: 13px;
-    width: 13px;
-    margin: 2px;
-    background-color: #dbdbdb;
-}
-
 /* refere to top start bottom end */
 .custom-carousel-indicators-primary {
     top: 235px;
@@ -351,14 +342,14 @@ h3.custom-heading {
 }
 
 .custom-carousel-indicators>li {
-    height: 13px;
-    width: 13px;
-    margin: 2px;
-    background-color: #dbdbdb;
+    height: 13px!important;
+    width: 13px!important;
+    margin: 2px!important;
+    background-color: #dbdbdb!important;
 }
 
 .custom-carousel-indicators>li.active {
-    background-color: #565656;
+    background-color: #565656 !important;
 }
 
 .custom-thumbnail img {
