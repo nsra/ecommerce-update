@@ -206,18 +206,18 @@ body {
     margin-top: 18px;
 }
 
-/* .custom-btn-primary {
+/* .custom-btn-outline-warning {
     color: #F8AD47 !important;
     border-color: #F8AD47 !important;
     background-color: transparent;
 } */
 
-/* .custom-btn-primary:hover,
-.custom-btn-primary:focus,
-.custom-btn-primary:active,
-.custom-btn-primary:active:hover,
-.custom-btn-primary:active:focus,
-.custom-btn-primary:hover:disabled {
+/* .custom-btn-outline-warning:hover,
+.custom-btn-outline-warning:focus,
+.custom-btn-outline-warning:active,
+.custom-btn-outline-warning:active:hover,
+.custom-btn-outline-warning:active:focus,
+.custom-btn-outline-warning:hover:disabled {
     color: #b86d09;
     border-color: #b86d09;
     background-color: transparent;
@@ -227,7 +227,7 @@ body {
     font-size: 14px;
 } */
 
-/* #carousel-featured .product-details .custom-btn-primary {
+/* #carousel-featured .product-details .custom-btn-outline-warning {
     margin-top: 15px !important;
 } */
 
@@ -259,7 +259,7 @@ body {
     border-right: 1px solid #EEF0EA;
 }
 
-h3.custom-heading {
+h3.heading {
     font-size: 24px;
     margin-bottom: 25px;
 }
@@ -322,7 +322,7 @@ h3.custom-heading {
     position: static;
 } */
 
-.custom-carousel-indicators-primary img{
+.custom-carousel-indicators img{
     opacity: 1 !important;
     height: 70px !important;
     width: 70px !important;
@@ -332,23 +332,23 @@ h3.custom-heading {
 }
 
 /* refere to top start bottom end */
-.custom-carousel-indicators-primary {
+.custom-carousel-indicators {
     top: 235px;
     right: 41%;
 }
 
-.custom-carousel-indicators-primary img.active {
-    border-color: #F8AD47;
+.custom-carousel-indicators img.active {
+    border-color: #F8AD47!important;
 }
 
-.custom-carousel-indicators>li {
+.custom-carousel-indicators2>li {
     height: 13px!important;
     width: 13px!important;
     margin: 2px!important;
     background-color: #dbdbdb!important;
 }
 
-.custom-carousel-indicators>li.active {
+.custom-carousel-indicators2>li.active {
     background-color: #565656 !important;
 }
 
@@ -361,20 +361,20 @@ h3.custom-heading {
 }
 
 /*الماركات العالمية*/
-.custom-panel {
+.panel {
     border: 4px solid #EEF0EA;
     border-radius: 2px;
-    box-shadow: none;
+    /* box-shadow: none; */
     padding: 20px;
 }
 
-/* .custom-panel .product-image {
+/* .panel .product-image {
     width: 100%;
     margin-bottom: 8px;
 } */
 
-.custom-panel h4,
-.custom-panel .price {
+.panel h4,
+.panel .price {
     font-size: 130%;
     margin-top: 0;
     margin-bottom: 15px;
@@ -385,29 +385,16 @@ h3.custom-heading {
     color: #A9A9A9;
 }
 
-.custom-arrow-btn {
+.arrow-btn {
     background-color: #fff;
     color: #868686;
     border: 1px solid #EBEBEB;
-    box-shadow: none;
     border-radius: 2px;
     padding: 5px 10px;
     font-size: 12px;
 }
 
-/* .brand-products {
-    margin-bottom: 20px;
-} */
-
-/* .brand-text {
-    display: inline-block;
-} */
-
-/* .brand-products .brand-nav {
-    margin-top: 14px;
-} */
-
-#row-brands h3.custom-heading {
+#row-brands h3.heading {
     border-top: 1px solid #EEF0EA;
     padding-top: 25px
 }
@@ -440,9 +427,9 @@ h3.custom-heading {
     background-position: 110% 0, -10% -150%
 }
 
-#footer-nav-links {
+/* #footer-nav-links {
     margin: 30px 0;
-}
+} */
 
 #footer-nav-links a {
     color: #555555;
@@ -457,7 +444,6 @@ h3.custom-heading {
 
 #footer-nav form {
     max-width: 260px;
-    margin: auto;
 }
 
 #footer-nav form label {
@@ -480,7 +466,7 @@ input[type="number"] {
     text-align: right;
 }
 
-/* #newsletter form button {
+#newsletter form button {
     border-radius: 0px;
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
@@ -488,7 +474,7 @@ input[type="number"] {
     padding: 6px 12px 5px;
     color: inherit;
     height: 38px;
-} */
+}
 
 #footer-copyright-social {
     background-color: #151515;
@@ -505,18 +491,18 @@ input[type="number"] {
     text-decoration: none;
 }
 
-/* .custom-btn-primary2 {
+/* .custom-btn-warning {
     color: white;
     background-color: #F8AD47;
     border-color: #F8AD47;
 }
 
-.custom-btn-primary2:hover,
-.custom-btn-primary2:focus,
-.custom-btn-primary2:active,
-.custom-btn-primary2:active:hover,
-.custom-btn-primary2:active:focus,
-.custom-btn-primary2:hover:disabled {
+.custom-btn-warning:hover,
+.custom-btn-warning:focus,
+.custom-btn-warning:active,
+.custom-btn-warning:active:hover,
+.custom-btn-warning:active:focus,
+.custom-btn-warning:hover:disabled {
     color: white;
     border-color: #b86d09;
     background-color: #b86d09;
@@ -685,7 +671,7 @@ Product Page
 CHECKOUT PAGE
 *****************
 **************************************************************/
-h1.custom-heading {
+h1.heading {
     font-size: 36px;
     margin: 25px 0;
 }
@@ -799,12 +785,12 @@ SEARCH PAGE
     display: table;
 }
 
-#form-advanced-search .custom-panel {
+#form-advanced-search .panel {
     border: none;
     padding: 5px;
 }
 
-.custom-panel .card-header {
+.panel .card-header {
     background-color: transparent;
     margin-bottom: 15px;
     padding: 7px 10px 13px;
@@ -934,13 +920,14 @@ MEDIA QUERY
 *****************
 **************************************************************/
 
-@media (max-width:1199px) {
+@media (max-width:1199.98px) {
+    /* or px-2 */
     .custom-navbar .navbar-nav li a.nav-link {
         padding: 7px;
     }
 }
 
-@media (max-width:991px) {
+@media (max-width:991.98px) {
     .custom-navbar {
         padding: 15px 20px 30px;
     }
@@ -1074,23 +1061,13 @@ MEDIA QUERY
 
 }
 
-@media (min-width: 1200px) {
-    .container,
-    .container-lg,
-    .container-md,
-    .container-sm,
-    .container-xl {
-        max-width: 1140px !important;
-    }
-}
-
-@media (max-width: 991px) and (min-width: 768px) {
+@media (max-width: 991.98px) and (min-width: 768.98px) {
     .custom-thumbnail img {
         height: 200px;
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 767.98px) {
     #footer-nav #newsletter {
         width: auto;
     }
@@ -1139,7 +1116,7 @@ MEDIA QUERY
     }
 }
 
-@media (max-width:575px) {
+@media (max-width: 575.98px) {
     .form-inline .custom-form-control {
         width: 80%;
     }
@@ -1152,7 +1129,8 @@ MEDIA QUERY
         padding: 0px 18px;
     }
 
-    #footer #brand-logos .img-container img {
+    /*  كانت معرف فوتر صارت وسم فوتر*/
+    footer #brand-logos .img-container img {
         margin: 5px 15px;
     }
 

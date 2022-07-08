@@ -32,7 +32,7 @@
   box-shadow: 0 0 2px 0 $btn-form-control-focus-dark;
 }
 
-.custom-btn-primary {
+.custom-btn-outline-warning {
   @include button-style($brand-primary);
 }
 
@@ -40,7 +40,7 @@
   @include button-style($brand-danger);
 }
 
-.custom-btn-primary2 {
+.custom-btn-warning {
   color: white;
   background-color: $brand-primary;
   border-color: $brand-primary;
