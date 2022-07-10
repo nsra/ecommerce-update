@@ -942,10 +942,9 @@ MEDIA QUERY
         margin-bottom: 22px;
     }
 
-    /* .navbar-header .btn-icon {
-        /* float: left; */
-        /* float: right; */
-    /* }  */
+    .navbar-header .btn-icon {
+        float: left;
+    } 
 
     .inline-form {
         width: 100%;
@@ -1061,7 +1060,7 @@ MEDIA QUERY
 
 }
 
-@media (max-width: 991.98px) and (min-width: 768.98px) {
+@media (min-width: 768) and (max-width: 991.98px) {
     .custom-thumbnail img {
         height: 200px;
     }
