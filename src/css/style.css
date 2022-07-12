@@ -124,16 +124,15 @@ body {
 .btn:focus,
 .btn:active {
     outline: none !important;
-    box-shadow: none;
+    box-shadow: none !important;
 }
 
-.custom-navbar a.btn-icon {
-    padding: 5px 10px 4px;
+.custom-navbar .btn-icon {
+    padding: 5px 10px;
     color: #777;
     border: 1px solid #ddd;
     background-color: transparent;
     border-radius: 2px;
-    margin-left: 10px;
     margin-right: 15px;
     font-size: 14px;
 }
@@ -965,7 +964,7 @@ MEDIA QUERY
         width: 10%;
     }
 
-    .custom-navbar a.btn-icon,
+    /* .custom-navbar a.btn-icon,
     .custom-navbar button.btn-icon {
         padding: 5px 10px;
         color: #777;
@@ -973,12 +972,12 @@ MEDIA QUERY
         background-color: transparent;
         border-radius: 2px;
         font-size: 18px;
-    }
+    } */
 
-    .navbar-header .btn-icon i {
+    /* .navbar-header .btn-icon i {
         font-size: 19px;
         font-weight: 700;
-    }
+    } */
 
     .custom-navbar .navbar-nav li a.nav-link {
         padding: 10px 15px;
@@ -991,8 +990,8 @@ MEDIA QUERY
     }
 
     #carousel-featured .carousel-indicators {
-        /* left: auto!important; */
-        right: auto!important;
+        left: auto!important;
+        /* right: auto!important; */
     }
     
     #carousel-featured .carousel-indicators {
@@ -1004,9 +1003,16 @@ MEDIA QUERY
         display: none;
     }
 
-    .custom-thumbnail .add-to-cart-btn {
-        color: #868686;
-        font-weight: normal;
+    #row-brands .carousel-inner img {
+        width: 200px !important;
+        height: auto !important;
+    }
+
+    .add-to-cart-btn {
+        margin-top: 8px;
+        color: #868686 !important;
+        font-weight: 400 !important;
+        border-color: #868686 !important;
     }
 
     #copyright,
@@ -1019,14 +1025,6 @@ MEDIA QUERY
         font-size: 150%;
         margin-top: 10px;
     }
-
-    .add-to-cart-btn {
-        margin-top: 8px;
-        color: #868686 !important;
-        font-weight: 400 !important;
-        border-color: #868686 !important;
-    }
-
     /*product page*/
     .product-option {
         width: 40px;
@@ -1060,7 +1058,7 @@ MEDIA QUERY
 
 }
 
-@media (min-width: 768) and (max-width: 991.98px) {
+@media (min-width: 768px) and (max-width: 991.98px) {
     .custom-thumbnail img {
         height: 200px;
     }
@@ -1105,10 +1103,6 @@ MEDIA QUERY
         padding: 0 20px;
     }
 
-    #newsletter form .input-group {
-        width: 100%;
-    }
-
     /*checkout page*/
     .hide-on-small {
         display: none;
@@ -1123,12 +1117,11 @@ MEDIA QUERY
     .form-inline .search-btn {
         width: 20%;
     }
-
+/* 
     #carousel-featured .carousel-item {
         padding: 0px 18px;
-    }
+    } */
 
-    /*  كانت معرف فوتر صارت وسم فوتر*/
     footer #brand-logos .img-container img {
         margin: 5px 15px;
     }
