@@ -107,13 +107,13 @@ document.querySelectorAll('#form-checkout input[name="payment_method"]').forEach
         if (paymentMethod === 'on_delivery') {
             credit_card_option.forEach(item => {
                 item.disabled= true
-                item.style.display == 'none' ? item.style.display = 'block' : item.style.display = 'none';
+                item.style.display = item.style.display == 'none' ? 'block' : 'none';
             })
         }
         else {
             credit_card_option.forEach(item => {
                 item.disabled= false
-                item.style.display == 'none' ? item.style.display = 'block' : item.style.display = 'none';
+                item.style.display = item.style.display == 'none' ? 'block' : 'none';
             })            
         }
     })
