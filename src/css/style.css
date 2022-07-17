@@ -427,9 +427,9 @@ h3.heading {
     background-position: 110% 0, -10% -150%
 }
 
-/* #footer-nav-links {
+#footer-nav-links {
     margin: 30px 0;
-} */
+}
 
 #footer-nav-links a {
     color: #555555;
