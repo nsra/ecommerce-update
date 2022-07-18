@@ -515,7 +515,6 @@ Product Page
 **************************************************************/
 /*عناصر التنقل الفرعية*/
 .custom-breadcrumb {
-    background-color: transparent;
     padding: 25px 0;
 }
 
@@ -529,9 +528,7 @@ Product Page
 }
 
 .custom-breadcrumb>li+li:before {
-    content: '>';
-    color: #555555;
-    padding: 0 5px;
+    color: #F8AD47!important;
 }
 
 .custom-breadcrumb .active {
