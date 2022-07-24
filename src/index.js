@@ -18,12 +18,21 @@ document.querySelectorAll('.add-to-cart-btn').forEach(item => {
     })
 })
 
-document.querySelectorAll(['.product-option input[type="radio"]']).forEach(item => {
+document.querySelectorAll(['.color-option input[type="radio"]']).forEach(item => {
     item.addEventListener('change', () => {
-        document.querySelectorAll('.product-option').forEach(i => {
+        document.querySelectorAll('.color-option').forEach(i => {
             i.classList.remove("active")
         })
-        item.closest('.product-option').classList.add("active")
+        item.parentNode.parentNode.classList.add("active")
+    })
+})
+
+document.querySelectorAll(['.size-option input[type="radio"]']).forEach(item => {
+    item.addEventListener('change', () => {
+        document.querySelectorAll('.size-option').forEach(i => {
+            i.classList.remove("active")
+        })
+        item.parentNode.parentNode.classList.add("active")
     })
 })
 

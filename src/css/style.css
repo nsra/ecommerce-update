@@ -537,14 +537,16 @@ Product Page
 
 /*صورة المنتج*/
 #carousel-product-images .carousel-indicators {
-    position: relative;
-    top: -35px;
+    position: absolute;
+    top: 92%;
     right: 0;
+    /* margin-bottom: 20px; */
 }
 
 #carousel-product-images .carousel-item img {
     border: 1px solid #EBEBEB;
     width: 100%;
+    height: auto;
 }
 
 /*تفاصيل المنتج*/
@@ -553,9 +555,8 @@ Product Page
 }
 
 #form-product-selection h2 {
-    font-size: 30px;
     font-weight: 700;
-    margin: 18px 0 18px;
+    margin: 18px 0;
 }
 
 .price.large {
@@ -565,8 +566,7 @@ Product Page
 
 .borders-between>div+div {
     border-top: 1px solid #EBEBEB;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding: 15px 0;
 }
 
 .product-option {
@@ -577,19 +577,15 @@ Product Page
     text-align: center;
     justify-content: center;
     color: #C2C2C2;
-    margin: 3px 3px 9px 3px;
-}
-
-/* .product-option input {
-    display: none;
-} */
-
-.product-option label {
+    margin: 3px;
     font-weight: 700;
-    display: inline-block;
 }
 
-.product-option.active {
+.product-option input {
+    display: none;
+}
+
+.size-option.active {
     color: #F8AD47;
     border-color: #F8AD47;
 }
@@ -600,23 +596,13 @@ Product Page
 }
 
 .product-quantity select {
-    width: 56px;
     height: 34px !important;
     padding: 6px 12px;
-    margin-right: 3px;
+    margin-right: 5px;
 }
 
-/* .product-quantity .label {
-    padding-top: 10px;
-} */
-
-/* .product-quantity {
-    padding-bottom: 20px;
-} */
-
 .custom-btn-with-icon {
-    /* margin-top: 15px; 
-    margin-bottom: 50px; */
+    /* margin: 15px 0; */
     font-size: 18px;
     padding: 5px 10px 5px 10px;
 }
@@ -629,7 +615,7 @@ Product Page
 
 .heading-inline {
     display: inline-block;
-    min-width: 250px;
+    width: 250px;
 }
 
 .more-description p,
@@ -638,10 +624,6 @@ Product Page
 }
 
 /*التعليقات على المنتج*/
-/* .comments .comment {
-    margin: 15px;
-} */
-
 /* .comments .comment:first-child {
     margin-top: 0px;
 } */
@@ -1028,6 +1010,10 @@ MEDIA QUERY
     }
 
     /*product page*/
+    .product-images {
+        margin-bottom: 70px;
+    }
+
     .product-option {
         width: 40px;
         height: 40px;
@@ -1133,7 +1119,6 @@ MEDIA QUERY
     /*product page*/
     #form-product-selection,
     .comments {
-        padding-left: 15px;
         padding-right: 15px;
     }
 }

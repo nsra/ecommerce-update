@@ -41,7 +41,7 @@
 }
 
 .custom-btn-warning {
-  color: white;
+  color: #000;
   background-color: $brand-primary;
   border-color: $brand-primary;
   &:hover,
@@ -52,6 +52,6 @@
   &:hover:disabled {
     border-color: $btn-primary-color-dark;
     background-color: $btn-primary-color-dark;
-    color: white;
+    color: #000;
   }
 }
