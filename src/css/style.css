@@ -356,8 +356,6 @@ h3.heading {
     height: 250px;
     width: 100%;
     max-width: 250px;
-    margin: 0 auto;
-    display: block;
 }
 
 /*الماركات العالمية*/
@@ -380,7 +378,6 @@ h3.heading {
     margin-bottom: 15px;
 }
 
-/* refer to text-muted */
 .custom-text-muted {
     color: #A9A9A9;
 }
@@ -647,12 +644,8 @@ CHECKOUT PAGE
 **************************************************************/
 h1.heading {
     font-size: 36px;
-    margin: 25px 0;
+    margin-bottom: 25px;
 }
-
-/* h3.table-title {
-    margin-top: 25px;
-} */
 
 .custom-table tfoot td {
     border-bottom: none;
@@ -705,35 +698,28 @@ h1.heading {
 }
 
 .custom-table .quantity {
-    width: 56px;
-    height: 34px !important;
+    width: 55px !important;
+    height: 35px !important;
     padding: 0px 8px;
     text-align: center;
-    margin: 0 auto;
 }
-
-/* .custom-table .custom-media {
-    margin-left: 15px;
-    margin-right: 15px;
-    margin-bottom: 15px;
-} */
 
 .custom-table .total-price * {
-    color: #000;
+    color: #868686;
 }
 
-/* .custom-btn-danger {
+/* .custom-btn-outline-danger {
     color: #ff5a5f;
     border-color: #ff5a5f;
     background-color: transparent;
 }
 
-.custom-btn-danger:hover,
-.custom-btn-danger:focus,
-.custom-btn-danger:active,
-.custom-btn-danger:active:hover,
-.custom-btn-danger:active:focus,
-.custom-btn-danger:hover:disabled {
+.custom-btn-outline-danger:hover,
+.custom-btn-outline-danger:focus,
+.custom-btn-outline-danger:active,
+.custom-btn-outline-danger:active:hover,
+.custom-btn-outline-danger:active:focus,
+.custom-btn-outline-danger:hover:disabled {
     color: #C2101E;
     border-color: #C2101E;
     background-color: transparent;

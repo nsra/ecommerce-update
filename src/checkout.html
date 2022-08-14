@@ -117,7 +117,7 @@
             <div class="borders-between">
                 <!--قسم عربة الشراء-->
                 <div class="row">
-                    <h1 class="heading mt-0">عربة الشراء</h1>
+                    <h1 class="heading">عربة الشراء</h1>
                     <form id="form-checkout" action="./payment.html">
                         <table class="custom-table">
                             <thead>
@@ -148,7 +148,7 @@
                                     </td>
                                     <td>
                                         <input name="product1" type="hidden" value="تي شيرت رجالي من لاكوست">
-                                        <select name="quantity1" class="custom-form-control  quantity"
+                                        <select name="quantity1" class="custom-form-control quantity"
                                             data-product-quantity>
                                             <option value="1">1</option>
                                             <option value="2">2</option>
@@ -159,7 +159,7 @@
                                         1200$
                                     </td>
                                     <td>
-                                        <button class="btn btn-danger custom-btn-danger" data-remove-from-cart>
+                                        <button class="btn  custom-btn-outline-danger" data-remove-from-cart>
                                             <span class="d-none d-md-block">حذف</span>
                                             <i class="far fa-trash-alt d-block d-md-none"></i>
                                         </button>
@@ -182,7 +182,7 @@
                                         <input name="product2" type="hidden" value="تي شيرت أديداس">
                                         <select name="quantity2" class="custom-form-control quantity"
                                             data-product-quantity>
-                                            <option value="1">1</option>
+                                            <option value="1" selected>1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
                                         </select>
@@ -191,7 +191,7 @@
                                         300$
                                     </td>
                                     <td>
-                                        <button class="btn btn-danger custom-btn-danger" data-remove-from-cart>
+                                        <button class="btn  custom-btn-outline-danger" data-remove-from-cart>
                                             <span class="d-none d-md-block">حذف</span>
                                             <i class="far fa-trash-alt d-block d-md-none"></i>
                                         </button>
@@ -201,13 +201,11 @@
                             <tfoot>
                                 <tr>
                                     <td colspan="5" class="total-price">
-                                        <span class="custom-text-muted">
-                                            <span class="custom-text-muted">
-                                                السعر الإجمالي للمنتجات:
-                                            </span>
-                                            <span id="total-price-for-all-products">1500</span>
-                                            دولار
+                                        <span>
+                                            السعر الإجمالي للمنتجات:
                                         </span>
+                                        <span id="total-price-for-all-products">1500</span>
+                                        <span>دولار</span>
                                     </td>
                                 </tr>
                             </tfoot>

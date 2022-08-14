@@ -36,13 +36,6 @@ document.querySelectorAll(['.size-option input[type="radio"]']).forEach(item => 
     })
 })
 
-document.querySelectorAll('[data-remove-from-cart]').forEach(item => {
-    item.addEventListener('click', () => {
-        item.closest('[data-product-info]').remove()
-        calculateTotalPrice()
-    })
-})
-
 document.querySelectorAll('[data-product-quantity]').forEach(item => {
     item.addEventListener('change', () => {
         const newQuantity = item.value
@@ -54,15 +47,22 @@ document.querySelectorAll('[data-product-quantity]').forEach(item => {
     })
 })
 
+document.querySelectorAll('[data-remove-from-cart]').forEach(item => {
+    item.addEventListener('click', () => {
+        item.closest('[data-product-info]').remove()
+        calculateTotalPrice()
+    })
+})
+
 function calculateTotalPrice() {
     // أنشئ متغيّرًا جديدًا لحفظ السعر الإجمالي    
     let totalPriceForAllProducts = 0;
     // لكل سطر يمثل معلومات المُنتج في الصّفحة    
-    document.querySelectorAll('[data-product-info]').forEach(item => {
+    document.querySelectorAll('[data-product-info]').forEach(product => {
         // اجلب سعر القطعة الواحدة من الخاصّية الموافقة        
-        const pricePerUnit = item.getAttribute("data-product-price");
+        const pricePerUnit = product.getAttribute("data-product-price");
         // اجلب كمية المنتج من حقل اختيار الكمية 
-        const quantity = item.querySelector('[data-product-quantity]').value;
+        const quantity = product.querySelector('[data-product-quantity]').value;
         // اجلب السعر الإجمالي للمنتج بناء على الكمية المشتراه منه
         const totalPriceForProduct = pricePerUnit * quantity;
         // أضف السعر الإجمالي لهذا المنتج إلى السعر الإجمالي لكل المُنتجات، واحفظ القيمة في المتغير نفسه        
