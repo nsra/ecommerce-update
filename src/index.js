@@ -72,38 +72,40 @@ function calculateTotalPrice() {
     document.getElementById("total-price-for-all-products").innerHTML = totalPriceForAllProducts + '$';
 }
 
-var citiesByCountry = {
+const citiesByCountry = {
     sa: ['الرياض', 'جدة'],
     eg: ['القاهرة', 'الإسكندرية'],
     jo: ['عمان', 'الزرقاء'],
     sy: ['دمشق', 'حلب', 'حماه']
 };
 
-document.querySelectorAll('#form-checkout select[name="country"]').forEach(item => {
+document.querySelectorAll('select[name="country"]').forEach(item => {
     item.addEventListener('change', () => {
-        // اجلب رمز البلد
+        // جلب الدولة
         const country = item.value;
-        // اجلب مدن هذا البلد من المصفوفة
-        const cities = citiesByCountry[country];
-        const city_options= document.querySelector('select[name="city"]')
-        while (city_options.options.length > 0) {
-            city_options.remove(0);
-        }
 
+        // جلب مدن الدولة من المصفوفة
+        const cities = citiesByCountry[country];
+
+        // تفريغ قائمة المدن
+        document.querySelectorAll('#paymentcities option').forEach(option => option.remove());
+
+        // إضافة خيار اختر مدينة لعنصر اختيار المدينة
         const firstOption = document.createElement('option');
         const optionText = document.createTextNode('اختر المدينة');
         firstOption.appendChild(optionText);
         firstOption.setAttribute('value', '');
         firstOption.setAttribute('disabled', 'true');
         firstOption.setAttribute('selected', 'true');
+        const city_options= document.getElementById('paymentcities');
         city_options.appendChild(firstOption);
 
-        // أضف المدن إلى قائمة المدن
-        cities.forEach(function (city) {
+        // إضافة المدن إلى قائمة المدن
+        cities.forEach((city) =>  {
             const newOption = document.createElement('option');
             const optionText = document.createTextNode(city);
             newOption.appendChild(optionText);
-            newOption.setAttribute('value', 'city');
+            newOption.setAttribute('value', city);
             city_options.appendChild(newOption);
         });
     })
@@ -111,8 +113,8 @@ document.querySelectorAll('#form-checkout select[name="country"]').forEach(item 
 
 document.querySelectorAll('#form-checkout input[name="payment_method"]').forEach(item => {
     item.addEventListener('change', () => {
-        const paymentMethod = item.value
-        const credit_card_option = document.querySelectorAll('#credit-card-info input')
+        const paymentMethod = item.value;
+        const credit_card_option = document.querySelectorAll('#credit-card-info input');
         if (paymentMethod === 'on_delivery') {
             credit_card_option.forEach(item => {
                 item.disabled= true
@@ -121,7 +123,7 @@ document.querySelectorAll('#form-checkout input[name="payment_method"]').forEach
         }
         else {
             credit_card_option.forEach(item => {
-                item.disabled= false
+                item.disabled= false;
                 item.style.display = item.style.display == 'none' ? 'block' : 'none';
             })            
         }
@@ -143,3 +145,4 @@ $(function () {
         }
     });
 })
+
