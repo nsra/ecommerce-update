@@ -66,15 +66,6 @@ body {
     border: 1px solid #8c8c8c;
 } */
 
-.custom-input-details {
-    border-width: 2px;
-    border-radius: 3px;
-    height: 46px !important;
-    padding: 0px 16px;
-    font-size: 18px;
-    width: 98%;
-}
-
 .custom-navbar .search-btn {
     background-color: #FF3956;
     border-color: #FF3956;
@@ -733,6 +724,14 @@ PAYMENT PAGE
 /* #credit-card-info {
     margin-right: 3%;
 } */
+.custom-input-details {
+    border-width: 2px;
+    border-radius: 3px;
+    height: 46px !important;
+    padding: 0px 16px;
+    font-size: 18px;
+    width: 98%;
+}
 
 
 /**************************************************************
@@ -754,21 +753,36 @@ SEARCH PAGE
 
 .panel .card-header {
     background-color: transparent;
-    margin-bottom: 15px;
-    padding: 7px 10px 13px;
+    margin-bottom: 15px; 
+    padding-bottom: 13px; 
 }
 
-.custom-list-group>.list-group-item {
+.custom-list-group .list-group-item {
     border: none;
-    padding: 0 10px 14px 0;
-}
-
-.custom-list-group>.list-group-item:last-child {
-    padding: 0 10px 0px 0;
 }
 
 .custom-list-group {
     border-bottom: 1px solid #EBEBEB;
+}
+
+.ui-slider {
+    margin: 25px 0 15px !important;
+    height: 2px !important;
+    background: #c5c5c5 !important;
+}
+
+.ui-slider .ui-slider-handle {
+    background-color: #F8AD47 !important;
+    border: none !important;
+    border-radius: 50% !important;
+    height: 12px !important;
+    width: 12px !important;
+    top: -6px !important;
+}
+
+.ui-slider .ui-slider-range {
+    border: 1px solid #F8AD47 !important;
+    top: -1px !important;
 }
 
 #form-advanced-search label {
@@ -816,26 +830,6 @@ SEARCH PAGE
     margin-top: 0;
 } */
 
-/* .ui-slider {
-    margin: 25px 0 15px !important;
-    height: 2px !important;
-    background: #c5c5c5 !important;
-
-}
-
-.ui-slider .ui-slider-handle {
-    background-color: #F8AD47 !important;
-    border: none !important;
-    border-radius: 50% !important;
-    height: 12px !important;
-    width: 12px !important;
-    top: -6px !important;
-}
-
-.ui-slider .ui-slider-range {
-    border: 1px solid #F8AD47 !important;
-    top: -1px !important;
-} */
 
 /**************************************************************
 ****************
@@ -848,33 +842,16 @@ CONTACT PAGE
 
 #contact-options h4 {
     font-size: 18px;
-    padding-bottom: 12px;
 }
-
-/* #contact-options .heading-with-border-bottom {
-    margin-bottom: 22px;
-} */
-
-/* #contact-info {
-    margin-bottom: 25px;
-} */
 
 #contact-info .fa-lg {
     color: #f3af41;
-    font-size: 18px;
-    margin: 10px;
-    width: 25px;
-    text-align: center;
+    margin: 10px 0px 0px 10px;
 }
 
 #contact-options textarea {
-    height: 120px !important;
+    height: 105px !important;
 }
-
-/* #contact-options {
-    margin-bottom: 25px;
-} */
-
 
 /**************************************************************
 ****************

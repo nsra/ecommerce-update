@@ -125,19 +125,19 @@
                         <h3 class="heading">بياناتك الشخصية</h3>
                         <div class="row">
                             <div class="col-md-6 mb-3">
-                                <input type="text" class="custom-form-control custom-input-details"
+                                <input type="text" class="form-control custom-form-control custom-input-details"
                                     placeholder="الاسم الأول" name="first_name" required>
                             </div>
                             <div class="col-md-6 mb-3">
-                                <input type="text" class="custom-form-control custom-input-details"
+                                <input type="text" class="form-control custom-form-control custom-input-details"
                                     placeholder="الاسم الأخير" name="last_name" required>
                             </div>
                             <div class="col-md-6 mb-3">
-                                <input type="email" class="custom-form-control custom-input-details"
+                                <input type="email" class="form-control custom-form-control custom-input-details"
                                     placeholder="البريد الإلكتروني" name="email" required>
                             </div>
                             <div class="col-md-6 mb-3">
-                                <input type="text" class="custom-form-control custom-input-details"
+                                <input type="text" class="form-control custom-form-control custom-input-details"
                                     placeholder="المنطقة" name="area" required>
                             </div>
                             <div class="col-md-6 mb-3">
@@ -157,15 +157,15 @@
                                 </select>
                             </div>
                             <div class="col-md-6 mb-3">
-                                <input class="custom-form-control custom-input-details" type="text"
+                                <input class="form-control custom-form-control custom-input-details" type="text"
                                     placeholder="رقم الموبايل" name="phone" required>
                             </div>
                             <div class="col-md-6 mb-3">
-                                <input class="custom-form-control custom-input-details" type="text"
+                                <input class="form-control custom-form-control custom-input-details" type="text"
                                     placeholder="العنوان الأول" name="address1" required>
                             </div>
                             <div class="col-md-6 mb-3">
-                                <input class="custom-form-control custom-input-details" type="text"
+                                <input class="form-control custom-form-control custom-input-details" type="text"
                                     placeholder="العنوان الثاني (اختياري)" name="address2">
                             </div>
                         </div>
@@ -191,21 +191,21 @@
                             <!--بيانات بطاقة الائتمان-->
                             <div class="row ms-2" id="credit-card-info">
                                 <div class="col-md-6 mb-3">
-                                    <input class="custom-form-control custom-input-details" type="text"
+                                    <input class="form-control custom-form-control custom-input-details" type="text"
                                         name="credit_card_number" placeholder="رقم البطاقة" required>
                                 </div>
                                 <div class="col-md-6 mb-3">
                                     <input name="credit_card_expiration_month"
-                                        class="custom-form-control custom-input-details"
+                                        class="form-control custom-form-control custom-input-details"
                                         placeholder="شهر الانتهاء" type="number" min="1" max="12" required>
                                 </div>
                                 <div class="col-md-6 mb-3">
-                                    <input class="custom-form-control custom-input-details" type="number"
+                                    <input class="form-control custom-form-control custom-input-details" type="number"
                                         min="2018" max="2030" placeholder="سنة الانتهاء"
                                         name="credit_card_expiration_year" required>
                                 </div>
                                 <div class="col-md-6 mb-3">
-                                    <input class="custom-form-control custom-input-details" type="number"
+                                    <input class="form-control custom-form-control custom-input-details" type="number"
                                         name="credit_card_cvv" placeholder="CVV" required>
                                 </div>
                             </div>
@@ -230,7 +230,7 @@
                             <tbody>
                                 <tr data-product-info data-product-price="400">
                                     <td>
-                                        <div class="mx-3 mb-3 d-flex">
+                                        <div class="custom-media d-flex">
                                             <img src="images/lacoste_1.jpg" alt="تي شيرت رجالي من لاكوست"
                                                 class="d-none d-md-block">
                                             <div>
@@ -265,7 +265,7 @@
                                 </tr>
                                 <tr data-product-info data-product-price="300">
                                     <td>
-                                        <div class="mx-3 mb-3 d-flex">
+                                        <div class="custom-media d-flex">
                                             <img src="images/tshirt.jpg" alt="تي شيرت أديداس" class="d-none d-md-block">
                                             <div>
                                                 <h4>تي شيرت أديداس</h4>
@@ -280,7 +280,7 @@
                                         <input name="product2" type="hidden" value="تي شيرت أديداس">
                                         <select name="quantity2" class="custom-form-control quantity"
                                             data-product-quantity>
-                                            <option value="1">1</option>
+                                            <option value="1" selected>1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
                                         </select>
@@ -295,18 +295,15 @@
                                         </button>
                                     </td>
                                 </tr>
-
                             </tbody>
                             <tfoot>
                                 <tr>
                                     <td colspan="5" class="total-price">
-                                        <span class="custom-text-muted">
-                                            <span class="custom-text-muted">
-                                                السعر الإجمالي للمنتجات:
-                                            </span>
-                                            <span id="total-price-for-all-products">1500</span>
-                                            دولار
+                                        <span>
+                                            السعر الإجمالي للمنتجات:
                                         </span>
+                                        <span id="total-price-for-all-products">1500</span>
+                                        <span>دولار</span>
                                     </td>
                                 </tr>
                             </tfoot>
