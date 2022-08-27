@@ -1,11 +1,11 @@
-import 'bootstrap/scss/bootstrap.scss';
-import './scss/style.scss';
-import './css/style.css';
-import '@fortawesome/fontawesome-free/js/all.min';
-import 'webpack-jquery-ui';
-import 'webpack-jquery-ui/css';
-import 'jquery-ui-touch-punch/jquery.ui.touch-punch.min.js';
-window.bootstrap = require('bootstrap/dist/js/bootstrap.bundle.js');
+import 'bootstrap/scss/bootstrap.scss'
+import './scss/style.scss'
+import './css/style.css'
+import '@fortawesome/fontawesome-free/js/all.min'
+import 'webpack-jquery-ui'
+import 'webpack-jquery-ui/css'
+import 'jquery-ui-touch-punch/jquery.ui.touch-punch.min.js'
+window.bootstrap = require('bootstrap/dist/js/bootstrap.bundle.js')
 
 document.querySelectorAll('[data-bs-toggle="tooltip"]').forEach(item => new bootstrap.Tooltip(item))
 
@@ -124,8 +124,8 @@ document.querySelectorAll('#form-checkout input[name="payment_method"]').forEach
     })
 })
 
-jQuery(function () {
-    jQuery("#price-range").slider({
+$(function () {
+    $("#price-range").slider({
         range: true,
         min: 50,
         max: 1000,
@@ -137,5 +137,5 @@ jQuery(function () {
         }
     })
 
-    jQuery('#widget').draggable()
+    $('#widget').draggable()
 })

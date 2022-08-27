@@ -590,7 +590,7 @@ Product Page
 }
 
 .custom-btn-with-icon {
-    /* margin: 15px 0; */
+    margin: 15px 0;
     font-size: 18px;
     padding: 5px 10px 5px 10px;
 }
@@ -695,8 +695,8 @@ h1.heading {
     text-align: center;
 }
 
-.custom-table .total-price * {
-    color: #868686;
+#total-price-for-all-products {
+    color: #000;
 }
 
 /* .custom-btn-outline-danger {
@@ -721,9 +721,7 @@ h1.heading {
 PAYMENT PAGE
 *****************
 **************************************************************/
-/* #credit-card-info {
-    margin-right: 3%;
-} */
+
 .custom-input-details {
     border-width: 2px;
     border-radius: 3px;
@@ -732,7 +730,6 @@ PAYMENT PAGE
     font-size: 18px;
     width: 98%;
 }
-
 
 /**************************************************************
 ****************
@@ -765,8 +762,13 @@ SEARCH PAGE
     border-bottom: 1px solid #EBEBEB;
 }
 
-.ui-slider {
-    margin: 25px 0 15px !important;
+#form-advanced-search label {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* .ui-slider {
+    margin: 25px 0 25px !important;
     height: 2px !important;
     background: #c5c5c5 !important;
 }
@@ -783,53 +785,33 @@ SEARCH PAGE
 .ui-slider .ui-slider-range {
     border: 1px solid #F8AD47 !important;
     top: -1px !important;
+} */
+
+.custom-pagination .page-link {
+    border: 1px solid #EBEBEB !important;
+    width: 32px !important;
+    height: 32px !important;
+    margin-right: 3px !important;
+    margin-left: 3px !important;
+    color: #C2C2C2 !important;
+    transition: all 0.3s ease !important;
+    text-decoration: none !important;
+    outline: none !important;
 }
 
-#form-advanced-search label {
-    cursor: pointer;
-    font-weight: bold;
+.custom-pagination .page-item.active .page-link {
+    background-color: #F8AD47 !important;
+    color: #fff !important;
+    border-color: #F8AD47 !important;
 }
 
-.custom-pagination li a {
-    border: 1px solid #EBEBEB;
-    width: 32px;
-    height: 32px;
-    line-height: 32px;
-    margin-right: 3px;
-    margin-left: 3px;
-    color: #C2C2C2;
-    display: inline-block;
-    text-align: center;
-    transition: all 0.3s ease;
-    text-decoration: none;
-}
-
-.custom-pagination li.active a {
-    background-color: #F8AD47;
-    color: #fff;
-    border-color: #F8AD47;
-}
-
-.custom-pagination li a:active,
-.custom-pagination li a:focus,
-.custom-pagination li a:hover {
+.custom-pagination .page-link:active,
+.custom-pagination .page-link:focus,
+.custom-pagination .page-link:hover {
     color: #AB7731;
     border-color: #AB7731;
+    background-color: #fff;
 }
-
-/* .custom-pagination {
-    margin: 25px 0;
-} */
-
-#search-results .custom-thumbnail {
-    margin-right: -8px;
-    margin-left: -8px;
-}
-
-/* #search-results h3.heading-with-border-bottom {
-    margin-top: 0;
-} */
-
 
 /**************************************************************
 ****************
@@ -905,21 +887,6 @@ MEDIA QUERY
         width: 10%;
     }
 
-    /* .custom-navbar a.btn-icon,
-    .custom-navbar button.btn-icon {
-        padding: 5px 10px;
-        color: #777;
-        border: 1px solid #ddd;
-        background-color: transparent;
-        border-radius: 2px;
-        font-size: 18px;
-    } */
-
-    /* .navbar-header .btn-icon i {
-        font-size: 19px;
-        font-weight: 700;
-    } */
-
     .custom-navbar .navbar-nav li a.nav-link {
         padding: 10px 15px;
     }
@@ -932,7 +899,6 @@ MEDIA QUERY
 
     #carousel-featured .carousel-indicators {
         left: auto !important;
-        /* right: auto!important; */
     }
 
     #carousel-featured .carousel-indicators {
@@ -999,7 +965,12 @@ MEDIA QUERY
 
     /*contact page*/
     #form-subscription {
-        margin-bottom: 40px;
+        margin-bottom: 25px;
+    }
+
+    #contact-options input[name=name]
+    {
+        margin-bottom: 15px;
     }
 
 }
