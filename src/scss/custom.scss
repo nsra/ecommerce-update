@@ -1,16 +1,18 @@
-// @import "../../node_modules/bootstrap/scss/bootstrap";
+@import "../../node_modules/bootstrap/scss/bootstrap";
 
-// $my-color: black;
-// body {
-//   background-color: $my-color;
-// }
+$my-color: black;
+body {
+  // background-color: $my-color !important;
+  // color: red !important;
+}
 
-// $primary: pink;
-// $danger: pink;
-// $theme-colors: (
-//   "primary": pink,
-//   "danger": $danger
-// );
+$primary: pink;
+$danger: pink;
+
+$theme-colors: (
+  "primary": $primary,
+  "danger": $danger
+);
 
 // $custom-colors: (
 //   "green": green
@@ -21,7 +23,7 @@
 // $theme-colors: map-remove($theme-colors, "info", "light", "dark");
 
 // $spacer: 5rem;
-// $border_radius: 20rem;
+$border_radius: 20rem;
 // $border-width: 20px;
 
 // $container-max-widths: (

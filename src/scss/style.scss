@@ -1,17 +1,15 @@
-@import './_mixins';
-@import './_variables';
-@import './_custom_table';
-@import './_slider';
-@import './_sale';
-// @import './custom';
+@import 'mixins';
+@import 'variables';
+@import 'custom_table';
+@import 'slider';
+@import 'sale';
+// @import 'custom';
 
-.custom-form-control,.custom-btn {
-  color: #868686; //notyet
+.custom-form-control, .custom-btn {
+  color: #868686; 
   border: 1px solid #EBEBEB;
   box-shadow: none;
   border-radius: 2px;
-//   transition-property: border-color, background-color;
-//   transition-duration: 0.3s;
   height:  38px;
   transition: all 0.3s ease;
   padding: 6px 16px 7px 16px;
@@ -20,11 +18,11 @@
 .custom-btn:hover{
   background-color: #d4d4d4;
   border: 1px solid #8c8c8c;
-  color: #FF3956
+  color: $brand-danger
 }
 
 .custom-btn:focus{
-  color: #FF3956
+  color: $brand-danger
 }
 
 .custom-form-control:focus {
@@ -33,25 +31,31 @@
 }
 
 .custom-btn-outline-warning {
-  @include button-style($brand-primary);
+  @include button-style($brand-warning);
 }
 
 .custom-btn-outline-danger {
   @include button-style($brand-danger);
 }
 
+.add-to-cart-btn {
+  background-color: #fff;
+  color: $brand-primary;
+  font-weight: 700;
+}
+
 .custom-btn-warning {
   color: #000;
-  background-color: $brand-primary;
-  border-color: $brand-primary;
+  background-color: $brand-warning;
+  border-color: $brand-warning;
   &:hover,
   &:focus,
   &:active,
   &:active:hover,
   &:active:focus,
   &:hover:disabled {
-    border-color: $btn-primary-color-dark;
-    background-color: $btn-primary-color-dark;
+    border-color: $btn-warning-color-dark;
+    background-color: $btn-warning-color-dark;
     color: #000;
   }
 }

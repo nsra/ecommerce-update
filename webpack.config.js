@@ -42,7 +42,7 @@ module.exports = {
             },
             {
                 test: /\.(sa|sc|c)ss$/,
-                exclude: /bootstrap\.scss$/i,
+                exclude: /custom\.scss$/i,
                 use: [{
                         loader: MiniCssExtractPlugin.loader,
                     },
@@ -51,7 +51,7 @@ module.exports = {
                 ]
             },
             {
-                test: /bootstrap\.scss$/,
+                test: /custom\.scss$/,
                 use: [{
                         loader: MiniCssExtractPlugin.loader,
                     },

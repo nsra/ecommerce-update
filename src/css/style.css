@@ -386,12 +386,12 @@ h3.heading {
     border-top: 1px solid #EEF0EA;
     padding-top: 25px
 }
-
+/* 
 .add-to-cart-btn {
     background-color: #fff;
     color: #19becd;
     font-weight: 700;
-}
+} */
 
 /*تذييل الصفحة*/
 #brand-logos {
@@ -741,6 +741,7 @@ SEARCH PAGE
     padding-bottom: 20px;
     margin-bottom: 35px;
     display: table;
+    height: fit-content;
 }
 
 #form-advanced-search .panel {

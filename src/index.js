@@ -1,4 +1,5 @@
-import 'bootstrap/scss/bootstrap.scss'
+// import 'bootstrap/scss/bootstrap.scss'
+import './scss/custom.scss'
 import './scss/style.scss'
 import './css/style.css'
 import '@fortawesome/fontawesome-free/js/all.min'
@@ -6,7 +7,6 @@ import 'webpack-jquery-ui'
 import 'webpack-jquery-ui/css'
 import 'jquery-ui-touch-punch/jquery.ui.touch-punch.min.js'
 window.bootstrap = require('bootstrap/dist/js/bootstrap.bundle.js')
-
 document.querySelectorAll('[data-bs-toggle="tooltip"]').forEach(item => new bootstrap.Tooltip(item))
 
 document.querySelectorAll('.add-to-cart-btn').forEach(item => {

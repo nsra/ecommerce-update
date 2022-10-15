@@ -1,4 +1,4 @@
-@import './_variables';
+@import 'variables';
 
 .ui-slider {
   margin: 25px 0 15px!important;
@@ -7,26 +7,25 @@
 
   // المقبضان
   .ui-slider-handle {
-    background-color: $brand-primary!important;
+    background-color: $brand-warning!important;
     border: none!important;
     border-radius: 50%;
     height: 12px!important;
     width: 12px!important;
     top: -6px!important;
+
+    // الشاشات الصّغيرة والصّغيرة جدًّا
+    @media (max-width: 991px) {
+      height: 20px !important;
+      width: 20px !important;
+      top: -10px !important;
+    }
   }
 
   // المجال
   .ui-slider-range {
-    border: 1px solid $brand-primary!important;
+    border: 1px solid $brand-warning!important;
     top: -1px!important;
   }
 }
 
-// الشاشات الصّغيرة والصّغيرة جدًّا
-@media (max-width: 991px) {
-  .ui-slider .ui-slider-handle {
-    height: 20px !important;
-    width: 20px !important;
-    top: -10px !important;
-  }
-}
